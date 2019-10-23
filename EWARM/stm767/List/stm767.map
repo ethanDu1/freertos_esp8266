@@ -1,0 +1,2311 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  23/Oct/2019  17:01:53
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  D:\stm767\stm767\EWARM\stm767\Exe\stm767.out
+#    Map file     =  D:\stm767\stm767\EWARM\stm767\List\stm767.map
+#    Command line =  
+#        -f C:\Users\usser\AppData\Local\Temp\EWD199.tmp
+#        (D:\stm767\stm767\EWARM\stm767\Obj\at_client.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\at_inf.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\at_ringbuff.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\at_utils.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\ca.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\cmsis_os.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\croutine.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\dm_client.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\dm_mqtt.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\esp8266.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\event_groups.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\HAL_OS_freertos.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\HAL_Timer_freertos.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\heap_4.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\json_parser.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\json_token.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\list.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\main.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\main_dynamic.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\main_mqtt.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\main_ota.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\mqtt_client.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\mqtt_client_common.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\mqtt_client_connect.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\mqtt_client_net.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\mqtt_client_publish.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\mqtt_client_subscribe.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\mqtt_client_unsubscribe.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\mqtt_client_yield.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\ota_client.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\ota_fetch.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\ota_lib.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\ota_mqtt.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\port.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\portasm.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\queue.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\shadow_client.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\shadow_client_common.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\shadow_client_json.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\shadow_client_manager.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\sim800c.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\startup_stm32f767xx.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_cortex.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_dma.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_dma_ex.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_exti.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_flash.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_flash_ex.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_gpio.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_i2c.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_i2c_ex.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_msp.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_pcd.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_pcd_ex.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_pwr.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_pwr_ex.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_rcc.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_rcc_ex.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_tim.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_tim_ex.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_timebase_tim.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_uart.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_hal_uart_ex.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_it.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stm32f7xx_ll_usb.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\stream_buffer.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\string_utils.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\system_stm32f7xx.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\tasks.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\timers.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\utils_httpc.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\utils_list.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\utils_md5.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\utils_net.o
+#        D:\stm767\stm767\EWARM\stm767\Obj\utils_timer.o --redirect
+#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --no_out_extension -o
+#        D:\stm767\stm767\EWARM\stm767\Exe\stm767.out --map
+#        D:\stm767\stm767\EWARM\stm767\List\stm767.map --config
+#        D:\stm767\stm767\EWARM/stm32f767xx_flash.icf --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = Basic
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x81f'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2007'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address     Size  Object
+  -------            ----         -------     ----  ------
+"A0":                                        0x1f8
+  .intvec            ro code   0x800'0000    0x1f8  startup_stm32f767xx.o [1]
+                             - 0x800'01f8    0x1f8
+
+"P1":                                      0x17695
+  .text              ro code   0x800'01f8   0x1448  shadow_client_manager.o [1]
+  .text              ro code   0x800'1640     0xcc  HAL_OS_freertos.o [1]
+  .text              ro code   0x800'170c    0x19c  utils_list.o [1]
+  .text              ro code   0x800'18a8    0x394  shadow_client_common.o [1]
+  .text              ro code   0x800'1c3c     0x66  ABImemset.o [4]
+  .text              ro code   0x800'1ca2     0x7a  lz77_init_single.o [4]
+  .text              ro code   0x800'1d1c    0x59c  mqtt_client.o [1]
+  .text              ro code   0x800'22b8      0x6  ABImemclr4.o [4]
+  .text              ro code   0x800'22be     0x3a  zero_init3.o [4]
+  .text              ro code   0x800'22f8     0x36  strlen.o [4]
+  .text              ro code   0x800'232e     0x26  xencoding_8859_1.o [2]
+  .text              ro code   0x800'2354    0x4c8  shadow_client_json.o [1]
+  .text              ro code   0x800'281c     0x12  strcmp.o [4]
+  .text              ro code   0x800'282e     0x44  utils_timer.o [1]
+  .text              ro code   0x800'2872     0x1e  xsscin.o [2]
+  .text              ro code   0x800'2890     0xa6  ABImemcpy.o [4]
+  .text              ro code   0x800'2936     0x1a  xsnprout.o [2]
+  .text              ro code   0x800'2950    0x688  queue.o [1]
+  .text              ro code   0x800'2fd8    0x288  heap_4.o [1]
+  .text              ro code   0x800'3260     0x28  printf.o [2]
+  .text              ro code   0x800'3288     0xac  fflush.o [2]
+  .text              ro code   0x800'3334     0x3c  vsnprint.o [2]
+  .text              ro code   0x800'3370    0xb30  tasks.o [1]
+  .text              ro code   0x800'3ea0    0x510  mqtt_client_connect.o [1]
+  .text              ro code   0x800'43b0    0x650  mqtt_client_yield.o [1]
+  .text              ro code   0x800'4a00    0x60c  mqtt_client_publish.o [1]
+  .text              ro code   0x800'500c    0x370  mqtt_client_subscribe.o [1]
+  .text              ro code   0x800'537c   0x1418  mqtt_client_common.o [1]
+  .text              ro code   0x800'6794     0x28  mqtt_client_net.o [1]
+  .text              ro code   0x800'67bc     0x32  ABImemset48.o [4]
+  .text              ro code   0x800'67f0    0x200  json_token.o [1]
+  .text              ro code   0x800'69f0     0x28  sscanf.o [2]
+  .text              ro code   0x800'6a18     0x28  strncmp.o [2]
+  .text              ro code   0x800'6a40     0x62  HAL_Timer_freertos.o [1]
+  .text              ro code   0x800'6aa4    0x1e4  port.o [1]
+  .text              ro code   0x800'6c88     0x9a  list.o [1]
+  .text              ro code   0x800'6d24    0xf46  xprintffull.o [2]
+  .text              ro code   0x800'7c6a     0x10  write.o [5]
+  .text              ro code   0x800'7c7c     0x18  strcpy.o [4]
+  .text              ro code   0x800'7c94    0x1a8  utils_net.o [1]
+  .text              ro code   0x800'7e3c     0x16  strchr.o [4]
+  .text              ro code   0x800'7e54     0x70  strncpy.o [4]
+  .text              ro code   0x800'7ec4    0x434  json_parser.o [1]
+  .text              ro code   0x800'82f8    0xe58  xscanffull.o [2]
+  CODE               ro code   0x800'9150     0xb4  portasm.o [1]
+  .text              ro code   0x800'9204    0x104  xlocale_c.o [2]
+  .text              ro code   0x800'9308     0x40  xfail_s.o [2]
+  .text              ro code   0x800'9348     0x58  memchr.o [4]
+  .text              ro code   0x800'93a0      0xa  xmbcurmax.o [2]
+  .text              ro code   0x800'93ac    0x230  I64DivMod.o [4]
+  .text              ro code   0x800'95dc     0x12  DblMul.o [3]
+  .text              ro code   0x800'95f0     0x88  frexp.o [3]
+  .text              ro code   0x800'9678     0x2e  DblCmpLe.o [3]
+  .text              ro code   0x800'96a8     0x2e  DblCmpGe.o [3]
+  .text              ro code   0x800'96d8    0x104  ldexp.o [3]
+  .text              ro code   0x800'97dc      0xe  DblToS32.o [3]
+  .text              ro code   0x800'97ea      0xe  S32ToDbl.o [3]
+  .text              ro code   0x800'97f8     0x12  DblSub.o [3]
+  .text              ro code   0x800'980a     0x12  DblDiv.o [3]
+  .text              ro code   0x800'981c      0xe  DblToU32.o [3]
+  .text              ro code   0x800'982a      0xe  U32ToDbl.o [3]
+  .text              ro code   0x800'9838     0x1e  dwrite.o [5]
+  .text              ro code   0x800'9858    0x7a4  esp8266.o [1]
+  .text              ro code   0x800'9ffc     0x3c  wctob.o [2]
+  .text              ro code   0x800'a038     0x14  isspace.o [2]
+  .text              ro code   0x800'a04c     0x9e  iar_Stollx.o [2]
+  .text              ro code   0x800'a0ec    0x1b2  iar_Stoullx.o [2]
+  .text              ro code   0x800'a2a0      0xe  math_wrappers64.o [3]
+  .text              ro code   0x800'a2ae     0x14  isalpha.o [2]
+  .text              ro code   0x800'a2c2      0xe  DblToFlt.o [3]
+  .text              ro code   0x800'a2d0      0x6  abort.o [2]
+  .text              ro code   0x800'a2d8      0x2  I64DivZer.o [4]
+  .text              ro code   0x800'a2da     0x20  iarwstd.o [5]
+  .text              ro code   0x800'a2fa     0x22  iarwrite.o [5]
+  .text              ro code   0x800'a31c     0xf8  at_ringbuff.o [1]
+  .text              ro code   0x800'a414    0xba0  stm32f7xx_hal_uart.o [1]
+  .text              ro code   0x800'afb4    0x6d8  at_client.o [1]
+  .text              ro code   0x800'b68c     0x30  strstr.o [2]
+  .text              ro code   0x800'b6bc     0x92  at_utils.o [1]
+  .text              ro code   0x800'b750     0xa0  at_inf.o [1]
+  .text              ro code   0x800'b7f0     0x14  tolower.o [2]
+  .text              ro code   0x800'b804    0x430  strto64.o [3]
+  .text              ro code   0x800'bc34     0x14  exit.o [5]
+  .text              ro code   0x800'bc48     0x80  iarttio.o [5]
+  .text              ro code   0x800'bcc8    0x208  stm32f7xx_hal_msp.o [1]
+  .text              ro code   0x800'bed0      0xc  stm32f7xx_hal.o [1]
+  .text              ro code   0x800'bedc     0x28  stm32f7xx_hal_dma.o [1]
+  .text              ro code   0x800'bf04      0x2  stm32f7xx_hal_uart.o [1]
+  .text              ro code   0x800'bf08    0x644  stm32f7xx_hal_rcc.o [1]
+  .text              ro code   0x800'c54c      0x2  stm32f7xx_hal_uart.o [1]
+  .text              ro code   0x800'c54e      0x2  stm32f7xx_hal_uart.o [1]
+  .text              ro code   0x800'c550     0x68  memcmp.o [4]
+  .text              ro code   0x800'c5b8    0x122  iar_Stopfx.o [2]
+  .text              ro code   0x800'c6dc    0x1c4  iar_Stoflt.o [2]
+  .text              ro code   0x800'c8a0    0x21c  iar_Stoxflt.o [2]
+  .text              ro code   0x800'cabc     0x3c  XShttio.o [2]
+  .text              ro code   0x800'caf8    0x110  stm32f7xx_hal_cortex.o [1]
+  .text              ro code   0x800'cc08    0x288  stm32f7xx_hal_gpio.o [1]
+  .text              ro code   0x800'ce90     0x94  stm32f7xx_hal_timebase_tim.o [1]
+  .text              ro code   0x800'cf24    0x2fa  stm32f7xx_hal_tim.o [1]
+  .text              ro code   0x800'd21e      0x2  stm32f7xx_hal_tim.o [1]
+  .text              ro code   0x800'd220      0x2  stm32f7xx_hal_tim.o [1]
+  .text              ro code   0x800'd222      0x2  stm32f7xx_hal_tim.o [1]
+  .text              ro code   0x800'd224    0xf36  main.o [1]
+  .text              ro code   0x800'e15a      0x2  stm32f7xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'e15c      0x2  stm32f7xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'e15e      0x2  stm32f7xx_hal_tim.o [1]
+  .text              ro code   0x800'e160      0x2  stm32f7xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'e164    0x828  shadow_client.o [1]
+  .text              ro code   0x800'e98c    0x124  dm_client.o [1]
+  .text              ro code   0x800'eab0   0x12bc  dm_mqtt.o [1]
+  .text              ro code   0x800'fd6c    0xb58  ota_client.o [1]
+  .text              ro code   0x801'08c4     0x16  stm32f7xx_hal.o [1]
+  .text              ro code   0x801'08dc     0x6a  cmsis_os.o [1]
+  .text              ro code   0x801'0948     0x78  stm32f7xx_hal_pwr_ex.o [1]
+  .text              ro code   0x801'09c0    0x600  stm32f7xx_hal_rcc_ex.o [1]
+  .text              ro code   0x801'0fc0    0x174  stm32f7xx_hal_pcd.o [1]
+  .text              ro code   0x801'1134     0x18  stm32f7xx_hal.o [1]
+  .text              ro code   0x801'114c    0x3d4  ota_lib.o [1]
+  .text              ro code   0x801'1520    0x1e8  ota_fetch.o [1]
+  .text              ro code   0x801'1708    0x348  ota_mqtt.o [1]
+  .text              ro code   0x801'1a50    0x3a8  stm32f7xx_ll_usb.o [1]
+  .text              ro code   0x801'1df8     0x28  stm32f7xx_hal_pcd_ex.o [1]
+  .text              ro code   0x801'1e20    0xcb2  utils_md5.o [1]
+  .text              ro code   0x801'2ad4    0xbb4  utils_httpc.o [1]
+  .text              ro code   0x801'3688     0x28  stm32f7xx_hal.o [1]
+  .text              ro code   0x801'36b0    0x14c  iar_Stoulx.o [2]
+  .text              ro code   0x801'37fc     0x96  ABImemmove.o [4]
+  .rodata            const     0x801'3894     0x6c  ota_fetch.o [1]
+  .text              ro code   0x801'3900     0x60  system_stm32f7xx.o [1]
+  .rodata            const     0x801'3960     0x54  at_client.o [1]
+  .rodata            const     0x801'39b4     0x50  iar_Stoulx.o [2]
+  .rodata            const     0x801'3a04     0x50  iar_Stoullx.o [2]
+  .rodata            const     0x801'3a54     0x4c  main.o [1]
+  .rodata            const     0x801'3aa0     0x4c  xscanffull.o [2]
+  .rodata            const     0x801'3aec     0x48  at_client.o [1]
+  .rodata            const     0x801'3b34     0x48  dm_mqtt.o [1]
+  .rodata            const     0x801'3b7c     0x48  ota_lib.o [1]
+  .rodata            const     0x801'3bc4     0x44  at_client.o [1]
+  .rodata            const     0x801'3c08     0x48  strto64.o [3]
+  .rodata            const     0x801'3c50     0x44  at_client.o [1]
+  .rodata            const     0x801'3c94     0x44  at_client.o [1]
+  .rodata            const     0x801'3cd8     0x44  shadow_client_manager.o [1]
+  .rodata            const     0x801'3d1c     0x40  main.o [1]
+  .rodata            const     0x801'3d5c     0x40  main.o [1]
+  .rodata            const     0x801'3d9c     0x40  mqtt_client_yield.o [1]
+  .rodata            const     0x801'3ddc     0x40  utils_httpc.o [1]
+  .rodata            const     0x801'3e1c     0x40  utils_md5.o [1]
+  .rodata            const     0x801'3e5c     0x3c  mqtt_client_yield.o [1]
+  .rodata            const     0x801'3e98     0x3c  ota_lib.o [1]
+  .rodata            const     0x801'3ed4     0x3c  ota_lib.o [1]
+  .rodata            const     0x801'3f10     0x3c  ota_lib.o [1]
+  .rodata            const     0x801'3f4c     0x3c  utils_httpc.o [1]
+  .rodata            const     0x801'3f88     0x38  dm_mqtt.o [1]
+  .rodata            const     0x801'3fc0     0x38  mqtt_client_publish.o [1]
+  .rodata            const     0x801'3ff8     0x38  ota_client.o [1]
+  .rodata            const     0x801'4030     0x38  ota_lib.o [1]
+  .rodata            const     0x801'4068     0x38  utils_httpc.o [1]
+  .text              ro code   0x801'40a0     0x38  stm32f7xx_it.o [1]
+  .rodata            const     0x801'40d8     0x34  dm_mqtt.o [1]
+  .rodata            const     0x801'410c     0x34  dm_mqtt.o [1]
+  .rodata            const     0x801'4140     0x34  main.o [1]
+  .rodata            const     0x801'4174     0x34  mqtt_client_common.o [1]
+  .rodata            const     0x801'41a8     0x34  mqtt_client_common.o [1]
+  .rodata            const     0x801'41dc     0x34  ota_client.o [1]
+  .rodata            const     0x801'4210     0x34  shadow_client_common.o [1]
+  .rodata            const     0x801'4244     0x30  dm_mqtt.o [1]
+  .rodata            const     0x801'4274     0x30  dm_mqtt.o [1]
+  .rodata            const     0x801'42a4     0x30  mqtt_client_common.o [1]
+  .rodata            const     0x801'42d4     0x30  mqtt_client_common.o [1]
+  .rodata            const     0x801'4304     0x30  mqtt_client_yield.o [1]
+  .rodata            const     0x801'4334     0x30  utils_httpc.o [1]
+  .rodata            const     0x801'4364     0x2c  dm_mqtt.o [1]
+  .rodata            const     0x801'4390     0x2c  dm_mqtt.o [1]
+  .rodata            const     0x801'43bc     0x2c  dm_mqtt.o [1]
+  .rodata            const     0x801'43e8     0x2c  mqtt_client_common.o [1]
+  .rodata            const     0x801'4414     0x2c  mqtt_client_subscribe.o [1]
+  .rodata            const     0x801'4440     0x2c  mqtt_client_yield.o [1]
+  .rodata            const     0x801'446c     0x2c  shadow_client.o [1]
+  .rodata            const     0x801'4498     0x2c  shadow_client_common.o [1]
+  .rodata            const     0x801'44c4     0x2c  shadow_client_json.o [1]
+  .rodata            const     0x801'44f0     0x2c  shadow_client_manager.o [1]
+  .rodata            const     0x801'451c     0x2c  shadow_client_manager.o [1]
+  .rodata            const     0x801'4548     0x2c  shadow_client_manager.o [1]
+  .rodata            const     0x801'4574     0x28  at_client.o [1]
+  .rodata            const     0x801'459c     0x28  dm_mqtt.o [1]
+  .rodata            const     0x801'45c4     0x28  dm_mqtt.o [1]
+  .rodata            const     0x801'45ec     0x28  dm_mqtt.o [1]
+  .rodata            const     0x801'4614     0x28  dm_mqtt.o [1]
+  .rodata            const     0x801'463c     0x28  esp8266.o [1]
+  .rodata            const     0x801'4664     0x28  mqtt_client_common.o [1]
+  .rodata            const     0x801'468c     0x28  mqtt_client_common.o [1]
+  .rodata            const     0x801'46b4     0x28  mqtt_client_common.o [1]
+  .rodata            const     0x801'46dc     0x28  mqtt_client_publish.o [1]
+  .rodata            const     0x801'4704     0x28  mqtt_client_publish.o [1]
+  .rodata            const     0x801'472c     0x28  ota_client.o [1]
+  .rodata            const     0x801'4754     0x28  ota_fetch.o [1]
+  .rodata            const     0x801'477c     0x28  ota_lib.o [1]
+  .rodata            const     0x801'47a4     0x28  ota_mqtt.o [1]
+  .rodata            const     0x801'47cc     0x28  ota_mqtt.o [1]
+  .rodata            const     0x801'47f4     0x28  shadow_client.o [1]
+  .rodata            const     0x801'481c     0x28  shadow_client.o [1]
+  .rodata            const     0x801'4844     0x28  shadow_client.o [1]
+  .rodata            const     0x801'486c     0x28  shadow_client_common.o [1]
+  .rodata            const     0x801'4894     0x28  shadow_client_common.o [1]
+  .rodata            const     0x801'48bc     0x28  shadow_client_common.o [1]
+  .rodata            const     0x801'48e4     0x28  shadow_client_json.o [1]
+  .rodata            const     0x801'490c     0x28  shadow_client_manager.o [1]
+  .rodata            const     0x801'4934     0x28  shadow_client_manager.o [1]
+  .rodata            const     0x801'495c     0x28  shadow_client_manager.o [1]
+  .rodata            const     0x801'4984     0x28  utils_httpc.o [1]
+  .rodata            const     0x801'49ac     0x28  utils_httpc.o [1]
+  .rodata            const     0x801'49d4     0x28  utils_net.o [1]
+  .rodata            const     0x801'49fc     0x28  xscanffull.o [2]
+  .text              ro code   0x801'4a24     0x28  data_init.o [4]
+  .rodata            const     0x801'4a4c     0x24  at_client.o [1]
+  .rodata            const     0x801'4a70     0x24  dm_client.o [1]
+  .rodata            const     0x801'4a94     0x24  dm_mqtt.o [1]
+  .rodata            const     0x801'4ab8     0x24  dm_mqtt.o [1]
+  .rodata            const     0x801'4adc     0x24  dm_mqtt.o [1]
+  .rodata            const     0x801'4b00     0x24  dm_mqtt.o [1]
+  .rodata            const     0x801'4b24     0x24  dm_mqtt.o [1]
+  .rodata            const     0x801'4b48     0x24  dm_mqtt.o [1]
+  .rodata            const     0x801'4b6c     0x24  dm_mqtt.o [1]
+  .rodata            const     0x801'4b90     0x24  dm_mqtt.o [1]
+  .rodata            const     0x801'4bb4     0x24  dm_mqtt.o [1]
+  .rodata            const     0x801'4bd8     0x24  dm_mqtt.o [1]
+  .rodata            const     0x801'4bfc     0x24  esp8266.o [1]
+  .rodata            const     0x801'4c20     0x24  esp8266.o [1]
+  .rodata            const     0x801'4c44     0x24  main.o [1]
+  .rodata            const     0x801'4c68     0x24  main.o [1]
+  .rodata            const     0x801'4c8c     0x24  main.o [1]
+  .rodata            const     0x801'4cb0     0x24  mqtt_client.o [1]
+  .rodata            const     0x801'4cd4     0x24  mqtt_client_subscribe.o [1]
+  .rodata            const     0x801'4cf8     0x24  mqtt_client_yield.o [1]
+  .rodata            const     0x801'4d1c     0x24  mqtt_client_yield.o [1]
+  .rodata            const     0x801'4d40     0x24  ota_client.o [1]
+  .rodata            const     0x801'4d64     0x24  ota_client.o [1]
+  .rodata            const     0x801'4d88     0x24  ota_client.o [1]
+  .rodata            const     0x801'4dac     0x24  ota_client.o [1]
+  .rodata            const     0x801'4dd0     0x24  ota_mqtt.o [1]
+  .rodata            const     0x801'4df4     0x24  shadow_client.o [1]
+  .rodata            const     0x801'4e18     0x24  shadow_client.o [1]
+  .rodata            const     0x801'4e3c     0x24  shadow_client_common.o [1]
+  .rodata            const     0x801'4e60     0x24  shadow_client_common.o [1]
+  .rodata            const     0x801'4e84     0x24  shadow_client_json.o [1]
+  .rodata            const     0x801'4ea8     0x24  shadow_client_json.o [1]
+  .rodata            const     0x801'4ecc     0x24  shadow_client_manager.o [1]
+  .rodata            const     0x801'4ef0     0x24  shadow_client_manager.o [1]
+  .rodata            const     0x801'4f14     0x24  shadow_client_manager.o [1]
+  .rodata            const     0x801'4f38     0x24  shadow_client_manager.o [1]
+  .rodata            const     0x801'4f5c     0x24  shadow_client_manager.o [1]
+  .rodata            const     0x801'4f80     0x24  shadow_client_manager.o [1]
+  .rodata            const     0x801'4fa4     0x24  utils_httpc.o [1]
+  .rodata            const     0x801'4fc8     0x24  utils_httpc.o [1]
+  .rodata            const     0x801'4fec     0x24  utils_httpc.o [1]
+  .rodata            const     0x801'5010     0x24  utils_httpc.o [1]
+  .text              ro code   0x801'5034     0x22  fpinit_M.o [3]
+  .iar.init_table    const     0x801'5058     0x20  - Linker created -
+  .rodata            const     0x801'5078     0x20  at_client.o [1]
+  .rodata            const     0x801'5098     0x20  at_client.o [1]
+  .rodata            const     0x801'50b8     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'50d8     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'50f8     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'5118     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'5138     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'5158     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'5178     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'5198     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'51b8     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'51d8     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'51f8     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'5218     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'5238     0x20  dm_mqtt.o [1]
+  .rodata            const     0x801'5258     0x20  esp8266.o [1]
+  .rodata            const     0x801'5278     0x20  esp8266.o [1]
+  .rodata            const     0x801'5298     0x20  esp8266.o [1]
+  .rodata            const     0x801'52b8     0x20  main.o [1]
+  .rodata            const     0x801'52d8     0x20  main.o [1]
+  .rodata            const     0x801'52f8     0x20  main.o [1]
+  .rodata            const     0x801'5318     0x20  main.o [1]
+  .rodata            const     0x801'5338     0x20  main.o [1]
+  .rodata            const     0x801'5358     0x20  mqtt_client.o [1]
+  .rodata            const     0x801'5378     0x20  mqtt_client.o [1]
+  .rodata            const     0x801'5398     0x20  mqtt_client.o [1]
+  .rodata            const     0x801'53b8     0x20  mqtt_client.o [1]
+  .rodata            const     0x801'53d8     0x20  mqtt_client.o [1]
+  .rodata            const     0x801'53f8     0x20  mqtt_client_publish.o [1]
+  .rodata            const     0x801'5418     0x20  mqtt_client_subscribe.o [1]
+  .rodata            const     0x801'5438     0x20  mqtt_client_yield.o [1]
+  .rodata            const     0x801'5458     0x20  ota_client.o [1]
+  .rodata            const     0x801'5478     0x20  ota_client.o [1]
+  .rodata            const     0x801'5498     0x20  ota_client.o [1]
+  .rodata            const     0x801'54b8     0x20  ota_client.o [1]
+  .rodata            const     0x801'54d8     0x20  ota_client.o [1]
+  .rodata            const     0x801'54f8     0x20  ota_lib.o [1]
+  .rodata            const     0x801'5518     0x20  ota_lib.o [1]
+  .rodata            const     0x801'5538     0x20  ota_lib.o [1]
+  .rodata            const     0x801'5558     0x20  shadow_client.o [1]
+  .rodata            const     0x801'5578     0x20  shadow_client.o [1]
+  .rodata            const     0x801'5598     0x20  shadow_client.o [1]
+  .rodata            const     0x801'55b8     0x20  shadow_client.o [1]
+  .rodata            const     0x801'55d8     0x20  shadow_client.o [1]
+  .rodata            const     0x801'55f8     0x20  shadow_client_common.o [1]
+  .rodata            const     0x801'5618     0x20  shadow_client_common.o [1]
+  .rodata            const     0x801'5638     0x20  shadow_client_common.o [1]
+  .rodata            const     0x801'5658     0x20  shadow_client_common.o [1]
+  .rodata            const     0x801'5678     0x20  shadow_client_manager.o [1]
+  .rodata            const     0x801'5698     0x20  shadow_client_manager.o [1]
+  .rodata            const     0x801'56b8     0x20  shadow_client_manager.o [1]
+  .rodata            const     0x801'56d8     0x20  shadow_client_manager.o [1]
+  .rodata            const     0x801'56f8     0x20  shadow_client_manager.o [1]
+  .rodata            const     0x801'5718     0x20  shadow_client_manager.o [1]
+  .rodata            const     0x801'5738     0x20  shadow_client_manager.o [1]
+  .rodata            const     0x801'5758     0x20  utils_httpc.o [1]
+  .rodata            const     0x801'5778     0x20  utils_httpc.o [1]
+  .text              ro code   0x801'5798     0x1e  cmain.o [4]
+  .text              ro code   0x801'57b6      0x4  low_level_init.o [2]
+  .text              ro code   0x801'57ba      0x4  exit.o [2]
+  .text              ro code   0x801'57c0      0xa  cexit.o [4]
+  .rodata            const     0x801'57cc     0x1c  at_inf.o [1]
+  .rodata            const     0x801'57e8     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'5804     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'5820     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'583c     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'5858     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'5874     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'5890     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'58ac     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'58c8     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'58e4     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'5900     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'591c     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'5938     0x1c  dm_mqtt.o [1]
+  .rodata            const     0x801'5954     0x1c  esp8266.o [1]
+  .rodata            const     0x801'5970     0x1c  main.o [1]
+  .rodata            const     0x801'598c     0x1c  main.o [1]
+  .rodata            const     0x801'59a8     0x1c  main.o [1]
+  .rodata            const     0x801'59c4     0x1c  main.o [1]
+  .rodata            const     0x801'59e0     0x1c  main.o [1]
+  .rodata            const     0x801'59fc     0x1c  main.o [1]
+  .rodata            const     0x801'5a18     0x1c  main.o [1]
+  .rodata            const     0x801'5a34     0x1c  main.o [1]
+  .rodata            const     0x801'5a50     0x1c  main.o [1]
+  .rodata            const     0x801'5a6c     0x1c  main.o [1]
+  .rodata            const     0x801'5a88     0x1c  main.o [1]
+  .rodata            const     0x801'5aa4     0x1c  mqtt_client.o [1]
+  .rodata            const     0x801'5ac0     0x1c  mqtt_client.o [1]
+  .rodata            const     0x801'5adc     0x1c  mqtt_client.o [1]
+  .rodata            const     0x801'5af8     0x1c  mqtt_client.o [1]
+  .rodata            const     0x801'5b14     0x1c  mqtt_client.o [1]
+  .rodata            const     0x801'5b30     0x1c  mqtt_client.o [1]
+  .rodata            const     0x801'5b4c     0x1c  mqtt_client_common.o [1]
+  .rodata            const     0x801'5b68     0x1c  mqtt_client_common.o [1]
+  .rodata            const     0x801'5b84     0x1c  mqtt_client_common.o [1]
+  .rodata            const     0x801'5ba0     0x1c  mqtt_client_publish.o [1]
+  .rodata            const     0x801'5bbc     0x1c  mqtt_client_yield.o [1]
+  .rodata            const     0x801'5bd8     0x1c  ota_client.o [1]
+  .rodata            const     0x801'5bf4     0x1c  ota_client.o [1]
+  .rodata            const     0x801'5c10     0x1c  ota_fetch.o [1]
+  .rodata            const     0x801'5c2c     0x1c  ota_lib.o [1]
+  .rodata            const     0x801'5c48     0x1c  ota_lib.o [1]
+  .rodata            const     0x801'5c64     0x1c  ota_mqtt.o [1]
+  .rodata            const     0x801'5c80     0x1c  ota_mqtt.o [1]
+  .rodata            const     0x801'5c9c     0x1c  ota_mqtt.o [1]
+  .rodata            const     0x801'5cb8     0x1c  ota_mqtt.o [1]
+  .rodata            const     0x801'5cd4     0x1c  shadow_client.o [1]
+  .rodata            const     0x801'5cf0     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5d0c     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5d28     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5d44     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5d60     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5d7c     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5d98     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5db4     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5dd0     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5dec     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5e08     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5e24     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5e40     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5e5c     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5e78     0x1c  shadow_client_manager.o [1]
+  .rodata            const     0x801'5e94     0x1c  utils_httpc.o [1]
+  .rodata            const     0x801'5eb0     0x1c  utils_httpc.o [1]
+  .rodata            const     0x801'5ecc     0x1c  utils_httpc.o [1]
+  .rodata            const     0x801'5ee8     0x1c  utils_httpc.o [1]
+  .rodata            const     0x801'5f04     0x1c  utils_httpc.o [1]
+  .rodata            const     0x801'5f20     0x18  at_inf.o [1]
+  .rodata            const     0x801'5f38     0x18  dm_mqtt.o [1]
+  .rodata            const     0x801'5f50     0x18  dm_mqtt.o [1]
+  .rodata            const     0x801'5f68     0x18  dm_mqtt.o [1]
+  .rodata            const     0x801'5f80     0x18  dm_mqtt.o [1]
+  .rodata            const     0x801'5f98     0x18  dm_mqtt.o [1]
+  .rodata            const     0x801'5fb0     0x18  dm_mqtt.o [1]
+  .rodata            const     0x801'5fc8     0x18  dm_mqtt.o [1]
+  .rodata            const     0x801'5fe0     0x18  dm_mqtt.o [1]
+  .rodata            const     0x801'5ff8     0x18  dm_mqtt.o [1]
+  .rodata            const     0x801'6010     0x18  dm_mqtt.o [1]
+  .rodata            const     0x801'6028     0x18  esp8266.o [1]
+  .rodata            const     0x801'6040     0x18  esp8266.o [1]
+  .rodata            const     0x801'6058     0x18  esp8266.o [1]
+  .rodata            const     0x801'6070     0x18  esp8266.o [1]
+  .rodata            const     0x801'6088     0x18  esp8266.o [1]
+  .rodata            const     0x801'60a0     0x18  esp8266.o [1]
+  .rodata            const     0x801'60b8     0x18  main.o [1]
+  .rodata            const     0x801'60d0     0x18  main.o [1]
+  .rodata            const     0x801'60e8     0x18  mqtt_client.o [1]
+  .rodata            const     0x801'6100     0x18  mqtt_client.o [1]
+  .rodata            const     0x801'6118     0x18  mqtt_client_common.o [1]
+  .rodata            const     0x801'6130     0x18  mqtt_client_common.o [1]
+  .rodata            const     0x801'6148     0x18  mqtt_client_common.o [1]
+  .rodata            const     0x801'6160     0x18  mqtt_client_common.o [1]
+  .rodata            const     0x801'6178     0x18  mqtt_client_publish.o [1]
+  .rodata            const     0x801'6190     0x18  mqtt_client_publish.o [1]
+  .rodata            const     0x801'61a8     0x18  mqtt_client_publish.o [1]
+  .rodata            const     0x801'61c0     0x18  mqtt_client_publish.o [1]
+  .rodata            const     0x801'61d8     0x18  mqtt_client_subscribe.o [1]
+  .rodata            const     0x801'61f0     0x18  mqtt_client_yield.o [1]
+  .rodata            const     0x801'6208     0x18  mqtt_client_yield.o [1]
+  .rodata            const     0x801'6220     0x18  ota_client.o [1]
+  .rodata            const     0x801'6238     0x18  ota_client.o [1]
+  .rodata            const     0x801'6250     0x18  ota_client.o [1]
+  .rodata            const     0x801'6268     0x18  ota_client.o [1]
+  .rodata            const     0x801'6280     0x18  ota_client.o [1]
+  .rodata            const     0x801'6298     0x18  ota_client.o [1]
+  .rodata            const     0x801'62b0     0x18  ota_client.o [1]
+  .rodata            const     0x801'62c8     0x18  ota_fetch.o [1]
+  .rodata            const     0x801'62e0     0x18  ota_lib.o [1]
+  .rodata            const     0x801'62f8     0x18  ota_lib.o [1]
+  .rodata            const     0x801'6310     0x18  ota_lib.o [1]
+  .rodata            const     0x801'6328     0x18  ota_mqtt.o [1]
+  .rodata            const     0x801'6340     0x18  ota_mqtt.o [1]
+  .rodata            const     0x801'6358     0x18  ota_mqtt.o [1]
+  .rodata            const     0x801'6370     0x18  ota_mqtt.o [1]
+  .rodata            const     0x801'6388     0x18  shadow_client.o [1]
+  .rodata            const     0x801'63a0     0x18  shadow_client.o [1]
+  .rodata            const     0x801'63b8     0x18  shadow_client.o [1]
+  .rodata            const     0x801'63d0     0x18  shadow_client_common.o [1]
+  .rodata            const     0x801'63e8     0x18  shadow_client_json.o [1]
+  .rodata            const     0x801'6400     0x18  shadow_client_json.o [1]
+  .rodata            const     0x801'6418     0x18  shadow_client_json.o [1]
+  .rodata            const     0x801'6430     0x18  shadow_client_manager.o [1]
+  .rodata            const     0x801'6448     0x18  shadow_client_manager.o [1]
+  .rodata            const     0x801'6460     0x18  shadow_client_manager.o [1]
+  .rodata            const     0x801'6478     0x18  shadow_client_manager.o [1]
+  .rodata            const     0x801'6490     0x18  shadow_client_manager.o [1]
+  .rodata            const     0x801'64a8     0x18  shadow_client_manager.o [1]
+  .rodata            const     0x801'64c0     0x18  shadow_client_manager.o [1]
+  .rodata            const     0x801'64d8     0x18  shadow_client_manager.o [1]
+  .rodata            const     0x801'64f0     0x18  shadow_client_manager.o [1]
+  .rodata            const     0x801'6508     0x18  utils_httpc.o [1]
+  .rodata            const     0x801'6520     0x18  utils_httpc.o [1]
+  .rodata            const     0x801'6538     0x18  utils_httpc.o [1]
+  .rodata            const     0x801'6550     0x18  utils_httpc.o [1]
+  .rodata            const     0x801'6568     0x18  utils_httpc.o [1]
+  .rodata            const     0x801'6580     0x18  utils_httpc.o [1]
+  .rodata            const     0x801'6598     0x18  utils_httpc.o [1]
+  .text              ro code   0x801'65b0     0x16  xprout.o [2]
+  .text              ro code   0x801'65c8      0xc  putchar.o [2]
+  .rodata            const     0x801'65d4     0x14  at_client.o [1]
+  .rodata            const     0x801'65e8     0x14  at_client.o [1]
+  .rodata            const     0x801'65fc     0x14  at_client.o [1]
+  .rodata            const     0x801'6610     0x14  at_client.o [1]
+  .rodata            const     0x801'6624     0x14  at_inf.o [1]
+  .rodata            const     0x801'6638     0x14  at_inf.o [1]
+  .rodata            const     0x801'664c     0x14  dm_mqtt.o [1]
+  .rodata            const     0x801'6660     0x14  dm_mqtt.o [1]
+  .rodata            const     0x801'6674     0x14  dm_mqtt.o [1]
+  .rodata            const     0x801'6688     0x14  dm_mqtt.o [1]
+  .rodata            const     0x801'669c     0x14  dm_mqtt.o [1]
+  .rodata            const     0x801'66b0     0x14  dm_mqtt.o [1]
+  .rodata            const     0x801'66c4     0x14  esp8266.o [1]
+  .rodata            const     0x801'66d8     0x14  esp8266.o [1]
+  .rodata            const     0x801'66ec     0x14  esp8266.o [1]
+  .rodata            const     0x801'6700     0x14  esp8266.o [1]
+  .rodata            const     0x801'6714     0x14  esp8266.o [1]
+  .rodata            const     0x801'6728     0x14  esp8266.o [1]
+  .rodata            const     0x801'673c     0x14  esp8266.o [1]
+  .rodata            const     0x801'6750     0x14  esp8266.o [1]
+  .rodata            const     0x801'6764     0x14  esp8266.o [1]
+  .rodata            const     0x801'6778     0x14  esp8266.o [1]
+  .rodata            const     0x801'678c     0x14  main.o [1]
+  .rodata            const     0x801'67a0     0x14  main.o [1]
+  .rodata            const     0x801'67b4     0x14  main.o [1]
+  .rodata            const     0x801'67c8     0x14  main.o [1]
+  .rodata            const     0x801'67dc     0x14  main.o [1]
+  .rodata            const     0x801'67f0     0x14  main.o [1]
+  .rodata            const     0x801'6804     0x14  main.o [1]
+  .rodata            const     0x801'6818     0x14  main.o [1]
+  .rodata            const     0x801'682c     0x14  main.o [1]
+  .rodata            const     0x801'6840     0x14  main.o [1]
+  .rodata            const     0x801'6854     0x14  main.o [1]
+  .rodata            const     0x801'6868     0x14  main.o [1]
+  .rodata            const     0x801'687c     0x14  mqtt_client.o [1]
+  .rodata            const     0x801'6890     0x14  mqtt_client_common.o [1]
+  .rodata            const     0x801'68a4     0x14  mqtt_client_common.o [1]
+  .rodata            const     0x801'68b8     0x14  mqtt_client_common.o [1]
+  .rodata            const     0x801'68cc     0x14  mqtt_client_common.o [1]
+  .rodata            const     0x801'68e0     0x14  mqtt_client_common.o [1]
+  .rodata            const     0x801'68f4     0x14  mqtt_client_common.o [1]
+  .rodata            const     0x801'6908     0x14  mqtt_client_publish.o [1]
+  .rodata            const     0x801'691c     0x14  mqtt_client_publish.o [1]
+  .rodata            const     0x801'6930     0x14  mqtt_client_subscribe.o [1]
+  .rodata            const     0x801'6944     0x14  mqtt_client_yield.o [1]
+  .rodata            const     0x801'6958     0x14  mqtt_client_yield.o [1]
+  .rodata            const     0x801'696c     0x14  mqtt_client_yield.o [1]
+  .rodata            const     0x801'6980     0x14  mqtt_client_yield.o [1]
+  .rodata            const     0x801'6994     0x14  ota_client.o [1]
+  .rodata            const     0x801'69a8     0x14  ota_client.o [1]
+  .rodata            const     0x801'69bc     0x14  ota_client.o [1]
+  .rodata            const     0x801'69d0     0x14  ota_client.o [1]
+  .rodata            const     0x801'69e4     0x14  ota_client.o [1]
+  .rodata            const     0x801'69f8     0x14  ota_client.o [1]
+  .rodata            const     0x801'6a0c     0x14  ota_client.o [1]
+  .rodata            const     0x801'6a20     0x14  ota_client.o [1]
+  .rodata            const     0x801'6a34     0x14  ota_lib.o [1]
+  .rodata            const     0x801'6a48     0x14  ota_lib.o [1]
+  .rodata            const     0x801'6a5c     0x14  ota_lib.o [1]
+  .rodata            const     0x801'6a70     0x14  ota_mqtt.o [1]
+  .rodata            const     0x801'6a84     0x14  ota_mqtt.o [1]
+  .rodata            const     0x801'6a98     0x14  ota_mqtt.o [1]
+  .rodata            const     0x801'6aac     0x14  shadow_client.o [1]
+  .rodata            const     0x801'6ac0     0x14  shadow_client.o [1]
+  .rodata            const     0x801'6ad4     0x14  shadow_client.o [1]
+  .rodata            const     0x801'6ae8     0x14  shadow_client.o [1]
+  .rodata            const     0x801'6afc     0x14  shadow_client.o [1]
+  .rodata            const     0x801'6b10     0x14  shadow_client.o [1]
+  .rodata            const     0x801'6b24     0x14  shadow_client_common.o [1]
+  .rodata            const     0x801'6b38     0x14  shadow_client_common.o [1]
+  .rodata            const     0x801'6b4c     0x14  shadow_client_json.o [1]
+  .rodata            const     0x801'6b60     0x14  shadow_client_manager.o [1]
+  .rodata            const     0x801'6b74     0x14  shadow_client_manager.o [1]
+  .rodata            const     0x801'6b88     0x14  shadow_client_manager.o [1]
+  .rodata            const     0x801'6b9c     0x14  shadow_client_manager.o [1]
+  .rodata            const     0x801'6bb0     0x14  shadow_client_manager.o [1]
+  .rodata            const     0x801'6bc4     0x14  shadow_client_manager.o [1]
+  .rodata            const     0x801'6bd8     0x14  shadow_client_manager.o [1]
+  .rodata            const     0x801'6bec     0x14  shadow_client_manager.o [1]
+  .rodata            const     0x801'6c00     0x14  shadow_client_manager.o [1]
+  .rodata            const     0x801'6c14     0x14  shadow_client_manager.o [1]
+  .rodata            const     0x801'6c28     0x14  utils_httpc.o [1]
+  .rodata            const     0x801'6c3c     0x14  utils_httpc.o [1]
+  .rodata            const     0x801'6c50     0x14  utils_httpc.o [1]
+  .rodata            const     0x801'6c64     0x14  utils_httpc.o [1]
+  .rodata            const     0x801'6c78     0x14  utils_httpc.o [1]
+  .rodata            const     0x801'6c8c     0x14  utils_httpc.o [1]
+  .rodata            const     0x801'6ca0     0x14  utils_net.o [1]
+  .rodata            const     0x801'6cb4     0x10  at_client.o [1]
+  .rodata            const     0x801'6cc4     0x10  at_client.o [1]
+  .rodata            const     0x801'6cd4     0x10  at_client.o [1]
+  .rodata            const     0x801'6ce4     0x10  at_client.o [1]
+  .rodata            const     0x801'6cf4     0x10  at_client.o [1]
+  .rodata            const     0x801'6d04     0x10  at_client.o [1]
+  .rodata            const     0x801'6d14     0x10  at_client.o [1]
+  .rodata            const     0x801'6d24     0x10  at_inf.o [1]
+  .rodata            const     0x801'6d34     0x10  dm_client.o [1]
+  .rodata            const     0x801'6d44     0x10  dm_client.o [1]
+  .rodata            const     0x801'6d54     0x10  dm_mqtt.o [1]
+  .rodata            const     0x801'6d64     0x10  dm_mqtt.o [1]
+  .rodata            const     0x801'6d74     0x10  dm_mqtt.o [1]
+  .rodata            const     0x801'6d84     0x10  esp8266.o [1]
+  .rodata            const     0x801'6d94     0x10  esp8266.o [1]
+  .rodata            const     0x801'6da4     0x10  esp8266.o [1]
+  .rodata            const     0x801'6db4     0x10  esp8266.o [1]
+  .rodata            const     0x801'6dc4     0x10  esp8266.o [1]
+  .rodata            const     0x801'6dd4     0x10  esp8266.o [1]
+  .rodata            const     0x801'6de4     0x10  esp8266.o [1]
+  .rodata            const     0x801'6df4     0x10  esp8266.o [1]
+  .rodata            const     0x801'6e04     0x10  esp8266.o [1]
+  .rodata            const     0x801'6e14     0x10  esp8266.o [1]
+  .rodata            const     0x801'6e24     0x10  esp8266.o [1]
+  .rodata            const     0x801'6e34     0x10  main.o [1]
+  .rodata            const     0x801'6e44     0x10  main.o [1]
+  .rodata            const     0x801'6e54     0x10  main.o [1]
+  .rodata            const     0x801'6e64     0x10  main.o [1]
+  .rodata            const     0x801'6e74     0x10  main.o [1]
+  .rodata            const     0x801'6e84     0x10  main.o [1]
+  .rodata            const     0x801'6e94     0x10  main.o [1]
+  .rodata            const     0x801'6ea4     0x10  main.o [1]
+  .rodata            const     0x801'6eb4     0x10  main.o [1]
+  .rodata            const     0x801'6ec4     0x10  main.o [1]
+  .rodata            const     0x801'6ed4     0x10  main.o [1]
+  .rodata            const     0x801'6ee4     0x10  mqtt_client.o [1]
+  .rodata            const     0x801'6ef4     0x10  mqtt_client.o [1]
+  .rodata            const     0x801'6f04     0x10  mqtt_client_common.o [1]
+  .rodata            const     0x801'6f14     0x10  mqtt_client_common.o [1]
+  .rodata            const     0x801'6f24     0x10  mqtt_client_common.o [1]
+  .rodata            const     0x801'6f34     0x10  mqtt_client_publish.o [1]
+  .rodata            const     0x801'6f44     0x10  mqtt_client_subscribe.o [1]
+  .rodata            const     0x801'6f54     0x10  mqtt_client_subscribe.o [1]
+  .rodata            const     0x801'6f64     0x10  mqtt_client_yield.o [1]
+  .rodata            const     0x801'6f74     0x10  mqtt_client_yield.o [1]
+  .rodata            const     0x801'6f84     0x10  mqtt_client_yield.o [1]
+  .rodata            const     0x801'6f94     0x10  ota_client.o [1]
+  .rodata            const     0x801'6fa4     0x10  ota_client.o [1]
+  .rodata            const     0x801'6fb4     0x10  ota_client.o [1]
+  .rodata            const     0x801'6fc4     0x10  ota_client.o [1]
+  .rodata            const     0x801'6fd4     0x10  ota_client.o [1]
+  .rodata            const     0x801'6fe4     0x10  ota_client.o [1]
+  .rodata            const     0x801'6ff4     0x10  ota_client.o [1]
+  .rodata            const     0x801'7004     0x10  ota_client.o [1]
+  .rodata            const     0x801'7014     0x10  ota_client.o [1]
+  .rodata            const     0x801'7024     0x10  ota_fetch.o [1]
+  .rodata            const     0x801'7034     0x10  ota_lib.o [1]
+  .rodata            const     0x801'7044     0x10  ota_lib.o [1]
+  .rodata            const     0x801'7054     0x10  ota_lib.o [1]
+  .rodata            const     0x801'7064     0x10  ota_lib.o [1]
+  .rodata            const     0x801'7074     0x10  ota_mqtt.o [1]
+  .rodata            const     0x801'7084     0x10  shadow_client.o [1]
+  .rodata            const     0x801'7094     0x10  shadow_client_common.o [1]
+  .rodata            const     0x801'70a4     0x10  shadow_client_common.o [1]
+  .rodata            const     0x801'70b4     0x10  shadow_client_json.o [1]
+  .rodata            const     0x801'70c4     0x10  shadow_client_json.o [1]
+  .rodata            const     0x801'70d4     0x10  shadow_client_json.o [1]
+  .rodata            const     0x801'70e4     0x10  shadow_client_json.o [1]
+  .rodata            const     0x801'70f4     0x10  shadow_client_manager.o [1]
+  .rodata            const     0x801'7104     0x10  shadow_client_manager.o [1]
+  .rodata            const     0x801'7114     0x10  shadow_client_manager.o [1]
+  .rodata            const     0x801'7124     0x10  shadow_client_manager.o [1]
+  .rodata            const     0x801'7134     0x10  shadow_client_manager.o [1]
+  .rodata            const     0x801'7144     0x10  shadow_client_manager.o [1]
+  .rodata            const     0x801'7154     0x10  shadow_client_manager.o [1]
+  .rodata            const     0x801'7164     0x10  shadow_client_manager.o [1]
+  .rodata            const     0x801'7174     0x10  system_stm32f7xx.o [1]
+  .rodata            const     0x801'7184     0x10  utils_httpc.o [1]
+  .rodata            const     0x801'7194     0x10  utils_httpc.o [1]
+  .rodata            const     0x801'71a4     0x10  utils_httpc.o [1]
+  .rodata            const     0x801'71b4     0x10  utils_httpc.o [1]
+  .rodata            const     0x801'71c4     0x10  utils_net.o [1]
+  .rodata            const     0x801'71d4     0x10  utils_net.o [1]
+  .rodata            const     0x801'71e4     0x10  utils_net.o [1]
+  .rodata            const     0x801'71f4     0x10  utils_net.o [1]
+  .rodata            const     0x801'7204     0x10  utils_net.o [1]
+  .text              ro code   0x801'7214     0x10  startup_stm32f767xx.o [1]
+  .rodata            const     0x801'7224      0xc  at_inf.o [1]
+  .rodata            const     0x801'7230      0xc  dm_client.o [1]
+  .rodata            const     0x801'723c      0xc  dm_mqtt.o [1]
+  .rodata            const     0x801'7248      0xc  dm_mqtt.o [1]
+  .rodata            const     0x801'7254      0xc  dm_mqtt.o [1]
+  .rodata            const     0x801'7260      0xc  dm_mqtt.o [1]
+  .rodata            const     0x801'726c      0xc  dm_mqtt.o [1]
+  .rodata            const     0x801'7278      0xc  dm_mqtt.o [1]
+  .rodata            const     0x801'7284      0xc  esp8266.o [1]
+  .rodata            const     0x801'7290      0xc  esp8266.o [1]
+  .rodata            const     0x801'729c      0xc  esp8266.o [1]
+  .rodata            const     0x801'72a8      0xc  esp8266.o [1]
+  .rodata            const     0x801'72b4      0xc  esp8266.o [1]
+  .rodata            const     0x801'72c0      0xc  esp8266.o [1]
+  .rodata            const     0x801'72cc      0xc  esp8266.o [1]
+  .rodata            const     0x801'72d8      0xc  esp8266.o [1]
+  .rodata            const     0x801'72e4      0xc  json_parser.o [1]
+  .rodata            const     0x801'72f0      0xc  main.o [1]
+  .rodata            const     0x801'72fc      0xc  main.o [1]
+  .rodata            const     0x801'7308      0xc  mqtt_client.o [1]
+  .rodata            const     0x801'7314      0xc  ota_fetch.o [1]
+  .rodata            const     0x801'7320      0xc  ota_fetch.o [1]
+  .rodata            const     0x801'732c      0xc  ota_fetch.o [1]
+  .rodata            const     0x801'7338      0xc  ota_fetch.o [1]
+  .rodata            const     0x801'7344      0xc  ota_lib.o [1]
+  .rodata            const     0x801'7350      0xc  ota_lib.o [1]
+  .rodata            const     0x801'735c      0xc  ota_lib.o [1]
+  .rodata            const     0x801'7368      0xc  ota_mqtt.o [1]
+  .rodata            const     0x801'7374      0xc  ota_mqtt.o [1]
+  .rodata            const     0x801'7380      0xc  ota_mqtt.o [1]
+  .rodata            const     0x801'738c      0xc  ota_mqtt.o [1]
+  .rodata            const     0x801'7398      0xc  ota_mqtt.o [1]
+  .rodata            const     0x801'73a4      0xc  shadow_client_manager.o [1]
+  .rodata            const     0x801'73b0      0xc  shadow_client_manager.o [1]
+  .rodata            const     0x801'73bc      0xc  utils_net.o [1]
+  .text              ro code   0x801'73c8      0xc  cstartup_M.o [4]
+  .rodata            const     0x801'73d4      0x8  at_client.o [1]
+  .rodata            const     0x801'73dc      0x8  at_client.o [1]
+  .rodata            const     0x801'73e4      0x8  at_client.o [1]
+  .rodata            const     0x801'73ec      0x8  dm_mqtt.o [1]
+  .rodata            const     0x801'73f4      0x8  dm_mqtt.o [1]
+  .rodata            const     0x801'73fc      0x8  dm_mqtt.o [1]
+  .rodata            const     0x801'7404      0x8  esp8266.o [1]
+  .rodata            const     0x801'740c      0x8  esp8266.o [1]
+  .rodata            const     0x801'7414      0x8  esp8266.o [1]
+  .rodata            const     0x801'741c      0x8  esp8266.o [1]
+  .rodata            const     0x801'7424      0x8  esp8266.o [1]
+  .rodata            const     0x801'742c      0x8  json_parser.o [1]
+  .rodata            const     0x801'7434      0x8  json_parser.o [1]
+  .rodata            const     0x801'743c      0x8  json_parser.o [1]
+  .rodata            const     0x801'7444      0x8  json_parser.o [1]
+  .rodata            const     0x801'744c      0x8  json_parser.o [1]
+  .rodata            const     0x801'7454      0x8  json_parser.o [1]
+  .rodata            const     0x801'745c      0x8  json_token.o [1]
+  .rodata            const     0x801'7464      0x8  json_token.o [1]
+  .rodata            const     0x801'746c      0x8  main.o [1]
+  .rodata            const     0x801'7474      0x8  main.o [1]
+  .rodata            const     0x801'747c      0x8  main.o [1]
+  .rodata            const     0x801'7484      0x8  main.o [1]
+  .rodata            const     0x801'748c      0x8  main.o [1]
+  .rodata            const     0x801'7494      0x8  main.o [1]
+  .rodata            const     0x801'749c      0x8  main.o [1]
+  .rodata            const     0x801'74a4      0x8  main.o [1]
+  .rodata            const     0x801'74ac      0x8  main.o [1]
+  .rodata            const     0x801'74b4      0x8  mqtt_client.o [1]
+  .rodata            const     0x801'74bc      0x8  mqtt_client_connect.o [1]
+  .rodata            const     0x801'74c4      0x8  mqtt_client_connect.o [1]
+  .rodata            const     0x801'74cc      0x8  ota_lib.o [1]
+  .rodata            const     0x801'74d4      0x8  ota_lib.o [1]
+  .rodata            const     0x801'74dc      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'74e4      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'74ec      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'74f4      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'74fc      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'7504      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'750c      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'7514      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'751c      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'7524      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'752c      0x8  shadow_client_json.o [1]
+  .rodata            const     0x801'7534      0x8  shadow_client_manager.o [1]
+  .rodata            const     0x801'753c      0x8  shadow_client_manager.o [1]
+  .rodata            const     0x801'7544      0x8  shadow_client_manager.o [1]
+  .rodata            const     0x801'754c      0x8  shadow_client_manager.o [1]
+  .rodata            const     0x801'7554      0x8  shadow_client_manager.o [1]
+  .rodata            const     0x801'755c      0x8  system_stm32f7xx.o [1]
+  .rodata            const     0x801'7564      0x8  tasks.o [1]
+  .rodata            const     0x801'756c      0x8  utils_httpc.o [1]
+  .rodata            const     0x801'7574      0x8  utils_httpc.o [1]
+  .rodata            const     0x801'757c      0x8  utils_httpc.o [1]
+  .rodata            const     0x801'7584      0x8  utils_httpc.o [1]
+  .rodata            const     0x801'758c      0x6  xlocale_c.o [2]
+  .rodata            const     0x801'7594      0x4  heap_4.o [1]
+  .text              ro code   0x801'7598      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'759c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75a0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75a4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75a8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75ac      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75b0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75b4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75b8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75bc      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75c0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75c4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75c8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75cc      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75d0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75d4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75d8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75dc      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75e0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75e4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75e8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75ec      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75f0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75f4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75f8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'75fc      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7600      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7604      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7608      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'760c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7610      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7614      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7618      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'761c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7620      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7624      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7628      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'762c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7630      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7634      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7638      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'763c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7640      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7644      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7648      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'764c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7650      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7654      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7658      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'765c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7660      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7664      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7668      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'766c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7670      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7674      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7678      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'767c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7680      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7684      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7688      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'768c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7690      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7694      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7698      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'769c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76a0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76a4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76a8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76ac      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76b0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76b4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76b8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76bc      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76c0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76c4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76c8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76cc      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76d0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76d4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76d8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76dc      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76e0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76e4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76e8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76ec      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76f0      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76f4      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76f8      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'76fc      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7700      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7704      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7708      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'770c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7710      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7714      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7718      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'771c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7720      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7724      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7728      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'772c      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7730      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7734      0x4  startup_stm32f767xx.o [1]
+  .text              ro code   0x801'7738      0x4  startup_stm32f767xx.o [1]
+  .rodata            const     0x801'773c      0x0  zero_init3.o [4]
+  .rodata            const     0x801'773c      0x0  lz77_init_single.o [4]
+  Initializer bytes  const     0x801'773c    0x151  <for P2-1>
+                             - 0x801'788d  0x17695
+
+"P2", part 1 of 3:                           0x275
+  P2-1                        0x2000'0000    0x275  <Init block>
+    .data            inited   0x2000'0000     0x70  dm_mqtt.o [1]
+    .data            inited   0x2000'0070      0x4  esp8266.o [1]
+    .data            inited   0x2000'0074     0x70  esp8266.o [1]
+    .data            inited   0x2000'00e4      0x4  esp8266.o [1]
+    .data            inited   0x2000'00e8      0x4  mqtt_client.o [1]
+    .data            inited   0x2000'00ec      0x4  port.o [1]
+    .data            inited   0x2000'00f0      0x4  system_stm32f7xx.o [1]
+    .data            inited   0x2000'00f4     0x48  xfiles.o [2]
+    .data            inited   0x2000'013c     0x48  xfiles.o [2]
+    .data            inited   0x2000'0184     0x48  xfiles.o [2]
+    .data            inited   0x2000'01cc     0x20  xfiles.o [2]
+    .data            inited   0x2000'01ec     0x38  xlocale_c.o [2]
+    .data            inited   0x2000'0224     0x48  xlocale_c.o [2]
+    .data            inited   0x2000'026c      0x8  XShttio.o [2]
+    .data            inited   0x2000'0274      0x1  stm32f7xx_hal.o [1]
+                            - 0x2000'0275    0x275
+
+"P2", part 2 of 3:                          0xed7c
+  .bss               zero     0x2000'0278   0x7800  heap_4.o [1]
+  .bss               zero     0x2000'7a78   0x1800  at_client.o [1]
+  .bss               zero     0x2000'9278   0x1800  at_client.o [1]
+  .bss               zero     0x2000'aa78   0x1800  at_client.o [1]
+  .bss               zero     0x2000'c278   0x1800  at_client.o [1]
+  .bss               zero     0x2000'da78    0x804  shadow_client_manager.o [1]
+  .bss               zero     0x2000'e27c    0x404  main.o [1]
+  .bss               zero     0x2000'e680    0x400  at_utils.o [1]
+  .bss               zero     0x2000'ea80     0x8c  tasks.o [1]
+  .bss               zero     0x2000'eb0c     0x80  main.o [1]
+  .bss               zero     0x2000'eb8c     0x80  main.o [1]
+  .bss               zero     0x2000'ec0c     0x80  main.o [1]
+  .bss               zero     0x2000'ec8c     0x80  main.o [1]
+  .bss               zero     0x2000'ed0c     0x50  xfiles.o [2]
+  .bss               zero     0x2000'ed5c     0x50  xfiles.o [2]
+  .bss               zero     0x2000'edac     0x40  mqtt_client.o [1]
+  .bss               zero     0x2000'edec     0x40  queue.o [1]
+  .bss               zero     0x2000'ee2c     0x40  stm32f7xx_hal_timebase_tim.o [1]
+  .bss               zero     0x2000'ee6c     0x3c  at_client.o [1]
+  .bss               zero     0x2000'eea8     0x34  at_client.o [1]
+  .bss               zero     0x2000'eedc     0x14  at_client.o [1]
+  .bss               zero     0x2000'eef0     0x14  esp8266.o [1]
+  .bss               zero     0x2000'ef04     0x14  esp8266.o [1]
+  .bss               zero     0x2000'ef18     0x14  tasks.o [1]
+  .bss               zero     0x2000'ef2c     0x14  tasks.o [1]
+  .bss               zero     0x2000'ef40     0x14  tasks.o [1]
+  .bss               zero     0x2000'ef54     0x14  tasks.o [1]
+  .bss               zero     0x2000'ef68     0x14  tasks.o [1]
+  .bss               zero     0x2000'ef7c      0x8  heap_4.o [1]
+  .bss               zero     0x2000'ef84      0x4  at_client.o [1]
+  .bss               zero     0x2000'ef88      0x4  at_utils.o [1]
+  .bss               zero     0x2000'ef8c      0x4  heap_4.o [1]
+  .bss               zero     0x2000'ef90      0x4  heap_4.o [1]
+  .bss               zero     0x2000'ef94      0x4  heap_4.o [1]
+  .bss               zero     0x2000'ef98      0x4  heap_4.o [1]
+  .bss               zero     0x2000'ef9c      0x4  main.o [1]
+  .bss               zero     0x2000'efa0      0x4  main.o [1]
+  .bss               zero     0x2000'efa4      0x4  mqtt_client_common.o [1]
+  .bss               zero     0x2000'efa8      0x4  port.o [1]
+  .bss               zero     0x2000'efac      0x4  stm32f7xx_hal.o [1]
+  .bss               zero     0x2000'efb0      0x4  tasks.o [1]
+  .bss               zero     0x2000'efb4      0x4  tasks.o [1]
+  .bss               zero     0x2000'efb8      0x4  tasks.o [1]
+  .bss               zero     0x2000'efbc      0x4  tasks.o [1]
+  .bss               zero     0x2000'efc0      0x4  tasks.o [1]
+  .bss               zero     0x2000'efc4      0x4  tasks.o [1]
+  .bss               zero     0x2000'efc8      0x4  tasks.o [1]
+  .bss               zero     0x2000'efcc      0x4  tasks.o [1]
+  .bss               zero     0x2000'efd0      0x4  tasks.o [1]
+  .bss               zero     0x2000'efd4      0x4  tasks.o [1]
+  .bss               zero     0x2000'efd8      0x4  tasks.o [1]
+  .bss               zero     0x2000'efdc      0x4  tasks.o [1]
+  .bss               zero     0x2000'efe0      0x4  tasks.o [1]
+  .bss               zero     0x2000'efe4      0x4  tasks.o [1]
+  .bss               zero     0x2000'efe8      0x4  tasks.o [1]
+  .bss               zero     0x2000'efec      0x4  xfail_s.o [2]
+  .bss               zero     0x2000'eff0      0x1  port.o [1]
+  .bss               zero     0x2000'eff1      0x1  shadow_client_manager.o [1]
+  .bss               zero     0x2000'eff2      0x1  XShttio.o [2]
+                            - 0x2000'eff3   0xed7b
+
+"P2", part 3 of 3:                           0x400
+  CSTACK                      0x2000'eff8    0x400  <Block>
+    CSTACK           uninit   0x2000'eff8    0x400  <Block tail>
+                            - 0x2000'f3f8    0x400
+
+Unused ranges:
+
+         From           To       Size
+         ----           --       ----
+   0x801'788d   0x81f'ffff  0x1e'8773
+  0x2000'0275  0x2000'0277        0x3
+  0x2000'eff4  0x2000'eff7        0x4
+  0x2000'f3f8  0x2007'ffff   0x7'0c08
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xed7b:
+          0x2000'0278  0xed7b
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x151 (53% of destination):
+           0x801'773c   0x151
+    1 destination range, total size 0x275:
+          0x2000'0000   0x275
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                        ro code  ro data  rw data
+    ------                        -------  -------  -------
+command line/config:
+    -------------------------------------------------------
+    Total:
+
+D:\stm767\stm767\EWARM\stm767\Obj: [1]
+    HAL_OS_freertos.o                 204
+    HAL_Timer_freertos.o               98
+    at_client.o                     1 752      716   24 712
+    at_inf.o                          160      120
+    at_ringbuff.o                     248
+    at_utils.o                        146             1 028
+    cmsis_os.o                        106
+    dm_client.o                       292       80
+    dm_mqtt.o                       4 796    2 324      112
+    esp8266.o                       1 956      956      160
+    heap_4.o                          648        4   30 744
+    json_parser.o                   1 076       60
+    json_token.o                      512       16
+    list.o                            154
+    main.o                          3 894    1 392    1 548
+    mqtt_client.o                   1 436      486       68
+    mqtt_client_common.o            5 144      712        4
+    mqtt_client_connect.o           1 296       16
+    mqtt_client_net.o                  40
+    mqtt_client_publish.o           1 548      348
+    mqtt_client_subscribe.o           880      188
+    mqtt_client_yield.o             1 616      524
+    ota_client.o                    2 904      980
+    ota_fetch.o                       488      264
+    ota_lib.o                         980      748
+    ota_mqtt.o                        840      460
+    port.o                            484        2        9
+    portasm.o                         180
+    queue.o                         1 672                64
+    shadow_client.o                 2 088      632
+    shadow_client_common.o            916      512
+    shadow_client_json.o            1 224      400
+    shadow_client_manager.o         5 192    1 788    2 053
+    startup_stm32f767xx.o             940
+    stm32f7xx_hal.o                    98        1        5
+    stm32f7xx_hal_cortex.o            272
+    stm32f7xx_hal_dma.o                40
+    stm32f7xx_hal_gpio.o              648
+    stm32f7xx_hal_msp.o               520
+    stm32f7xx_hal_pcd.o               372
+    stm32f7xx_hal_pcd_ex.o             40
+    stm32f7xx_hal_pwr_ex.o            120
+    stm32f7xx_hal_rcc.o             1 604
+    stm32f7xx_hal_rcc_ex.o          1 536
+    stm32f7xx_hal_tim.o               770
+    stm32f7xx_hal_tim_ex.o              6
+    stm32f7xx_hal_timebase_tim.o      148                64
+    stm32f7xx_hal_uart.o            2 982
+    stm32f7xx_it.o                     56
+    stm32f7xx_ll_usb.o                936
+    system_stm32f7xx.o                 96       26        4
+    tasks.o                         2 864        8      300
+    utils_httpc.o                   2 996    1 040
+    utils_list.o                      412
+    utils_md5.o                     3 250       64
+    utils_net.o                       424      152
+    utils_timer.o                      68
+    -------------------------------------------------------
+    Total:                         66 168   15 019   60 875
+
+dl7M_tlf.a: [2]
+    XShttio.o                          60        4        9
+    abort.o                             6
+    exit.o                              4
+    fflush.o                          172
+    iar_Stoflt.o                      452
+    iar_Stollx.o                      158
+    iar_Stopfx.o                      290
+    iar_Stoullx.o                     434       80
+    iar_Stoulx.o                      332       80
+    iar_Stoxflt.o                     540
+    isalpha.o                          20
+    isspace.o                          20
+    low_level_init.o                    4
+    printf.o                           40
+    putchar.o                          12
+    sscanf.o                           40
+    strncmp.o                          40
+    strstr.o                           48
+    tolower.o                          20
+    vsnprint.o                         60
+    wctob.o                            60
+    xencoding_8859_1.o                 38
+    xfail_s.o                          64                 4
+    xfiles.o                                   133      408
+    xlocale_c.o                       260       75      128
+    xmbcurmax.o                        10
+    xprintffull.o                   3 910
+    xprout.o                           22
+    xscanffull.o                    3 672      116
+    xsnprout.o                         26
+    xsscin.o                           30
+    -------------------------------------------------------
+    Total:                         10 844      488      549
+
+m7M_tlv.a: [3]
+    DblCmpGe.o                         46
+    DblCmpLe.o                         46
+    DblDiv.o                           18
+    DblMul.o                           18
+    DblSub.o                           18
+    DblToFlt.o                         14
+    DblToS32.o                         14
+    DblToU32.o                         14
+    S32ToDbl.o                         14
+    U32ToDbl.o                         14
+    fpinit_M.o                         34
+    frexp.o                           136
+    ldexp.o                           260
+    math_wrappers64.o                  14
+    strto64.o                       1 072       72
+    -------------------------------------------------------
+    Total:                          1 732       72
+
+rt7M_tl.a: [4]
+    ABImemclr4.o                        6
+    ABImemcpy.o                       166
+    ABImemmove.o                      150
+    ABImemset.o                       102
+    ABImemset48.o                      50
+    I64DivMod.o                       560
+    I64DivZer.o                         2
+    cexit.o                            10
+    cmain.o                            30
+    cstartup_M.o                       12
+    data_init.o                        40
+    lz77_init_single.o                122
+    memchr.o                           88
+    memcmp.o                          104
+    strchr.o                           22
+    strcmp.o                           18
+    strcpy.o                           24
+    strlen.o                           54
+    strncpy.o                         112
+    zero_init3.o                       58
+    -------------------------------------------------------
+    Total:                          1 730
+
+shb_l.a: [5]
+    dwrite.o                           30
+    exit.o                             20
+    iarttio.o                         128
+    iarwrite.o                         34
+    iarwstd.o                          32
+    write.o                            16
+    -------------------------------------------------------
+    Total:                            260
+
+    Gaps                               44        8
+    Linker created                              32    1 024
+-----------------------------------------------------------
+    Grand Total:                   80 778   15 619   62 448
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base    0x801'5058           --   Gb  - Linker created -
+.iar.init_table$$Limit   0x801'5078           --   Gb  - Linker created -
+?main                    0x801'5799          Code  Gb  cmain.o [4]
+AHBPrescTable            0x801'7174    0x10  Data  Gb  system_stm32f7xx.o [1]
+APBPrescTable            0x801'755c     0x8  Data  Gb  system_stm32f7xx.o [1]
+BusFault_Handler         0x801'40a7     0x2  Code  Gb  stm32f7xx_it.o [1]
+CSTACK$$Base            0x2000'eff8           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'f3f8           --   Gb  - Linker created -
+CacheMore                0x800'9245    0x24  Code  Lc  xlocale_c.o [2]
+DebugMon_Handler         0x801'40ab     0x2  Code  Gb  stm32f7xx_it.o [1]
+Dtentox                  0x800'b955   0x158  Code  Lc  strto64.o [3]
+Error_Handler            0x800'e159     0x2  Code  Gb  main.o [1]
+HAL_AT_Read              0x800'9859    0x3a  Code  Gb  esp8266.o [1]
+HAL_AT_Read_Tcp          0x800'98ab    0xa6  Code  Gb  esp8266.o [1]
+HAL_AT_Read_Tcp::__func__
+                         0x801'6da4    0x10  Data  Lc  esp8266.o [1]
+HAL_AT_TCP_Connect       0x800'9df1   0x14e  Code  Gb  esp8266.o [1]
+HAL_AT_TCP_Connect::__func__
+                         0x801'673c    0x14  Data  Lc  esp8266.o [1]
+HAL_AT_TCP_Disconnect    0x800'99db    0x94  Code  Gb  esp8266.o [1]
+HAL_AT_TCP_Disconnect::__func__
+                         0x801'6040    0x18  Data  Lc  esp8266.o [1]
+HAL_AT_Write             0x800'9893    0x18  Code  Gb  esp8266.o [1]
+HAL_AT_Write_Tcp         0x800'9951    0x8a  Code  Gb  esp8266.o [1]
+HAL_AT_Write_Tcp::__func__
+                         0x801'66d8    0x14  Data  Lc  esp8266.o [1]
+HAL_DMA_Abort_IT         0x800'bedd    0x28  Code  Gb  stm32f7xx_hal_dma.o [1]
+HAL_Delay                0x801'3689    0x28  Code  Wk  stm32f7xx_hal.o [1]
+HAL_Free                 0x800'16b7     0xc  Code  Gb  HAL_OS_freertos.o [1]
+HAL_GPIO_Init            0x800'cc09   0x22e  Code  Gb  stm32f7xx_hal_gpio.o [1]
+HAL_GPIO_WritePin        0x800'ce37    0x1a  Code  Gb  stm32f7xx_hal_gpio.o [1]
+HAL_GetTick              0x800'bed1     0xc  Code  Wk  stm32f7xx_hal.o [1]
+HAL_IncTick              0x801'1135    0x18  Code  Wk  stm32f7xx_hal.o [1]
+HAL_Init                 0x801'08c5    0x16  Code  Gb  stm32f7xx_hal.o [1]
+HAL_InitTick             0x800'ce91    0x84  Code  Gb  stm32f7xx_hal_timebase_tim.o [1]
+HAL_Malloc               0x800'16ab     0xc  Code  Gb  HAL_OS_freertos.o [1]
+HAL_MspInit              0x800'bcc9    0x38  Code  Gb  stm32f7xx_hal_msp.o [1]
+HAL_MutexCreate          0x800'1641    0x16  Code  Gb  HAL_OS_freertos.o [1]
+HAL_MutexDestroy         0x800'1657    0x12  Code  Gb  HAL_OS_freertos.o [1]
+HAL_MutexLock            0x800'1669    0x2a  Code  Gb  HAL_OS_freertos.o [1]
+HAL_MutexUnlock          0x800'1693    0x18  Code  Gb  HAL_OS_freertos.o [1]
+HAL_NVIC_EnableIRQ       0x800'cbe7     0xe  Code  Gb  stm32f7xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority     0x800'cbbd    0x2a  Code  Gb  stm32f7xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                         0x800'cbb1     0xc  Code  Gb  stm32f7xx_hal_cortex.o [1]
+HAL_PCDEx_ActivateLPM    0x801'1df9    0x28  Code  Gb  stm32f7xx_hal_pcd_ex.o [1]
+HAL_PCD_Init             0x801'0fc1   0x174  Code  Gb  stm32f7xx_hal_pcd.o [1]
+HAL_PCD_MspInit          0x800'be1d    0x8c  Code  Gb  stm32f7xx_hal_msp.o [1]
+HAL_PWREx_EnableOverDrive
+                         0x801'0949    0x6c  Code  Gb  stm32f7xx_hal_pwr_ex.o [1]
+HAL_Printf               0x800'16c3    0x1c  Code  Gb  HAL_OS_freertos.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                         0x801'09c1   0x5d8  Code  Gb  stm32f7xx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig      0x800'c2d1   0x156  Code  Gb  stm32f7xx_hal_rcc.o [1]
+HAL_RCC_GetClockConfig   0x800'c4e5    0x34  Code  Gb  stm32f7xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq      0x800'c4b3     0x6  Code  Gb  stm32f7xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq     0x800'c4b9    0x16  Code  Gb  stm32f7xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq     0x800'c4cf    0x16  Code  Gb  stm32f7xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                         0x800'c427    0x8c  Code  Gb  stm32f7xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x800'bf09   0x3c8  Code  Gb  stm32f7xx_hal_rcc.o [1]
+HAL_SleepMs              0x800'16fd     0xc  Code  Gb  HAL_OS_freertos.o [1]
+HAL_Snprintf             0x800'16df    0x1e  Code  Gb  HAL_OS_freertos.o [1]
+HAL_TIMEx_Break2Callback
+                         0x800'e15d     0x2  Code  Wk  stm32f7xx_hal_tim_ex.o [1]
+HAL_TIMEx_BreakCallback
+                         0x800'e15b     0x2  Code  Wk  stm32f7xx_hal_tim_ex.o [1]
+HAL_TIMEx_CommutCallback
+                         0x800'e161     0x2  Code  Wk  stm32f7xx_hal_tim_ex.o [1]
+HAL_TIM_Base_Init        0x800'cf25    0x38  Code  Gb  stm32f7xx_hal_tim.o [1]
+HAL_TIM_Base_Start_IT    0x800'cf5d    0x32  Code  Gb  stm32f7xx_hal_tim.o [1]
+HAL_TIM_IRQHandler       0x800'cf95   0x194  Code  Gb  stm32f7xx_hal_tim.o [1]
+HAL_TIM_PeriodElapsedCallback
+                         0x800'e01b    0x12  Code  Gb  main.o [1]
+HAL_Timer_Countdown      0x800'6a6f    0x1e  Code  Gb  HAL_Timer_freertos.o [1]
+HAL_Timer_Countdown_ms   0x800'6a59    0x16  Code  Gb  HAL_Timer_freertos.o [1]
+HAL_Timer_Expired        0x800'6a41    0x18  Code  Gb  HAL_Timer_freertos.o [1]
+HAL_Timer_Init           0x800'6a9d     0x6  Code  Gb  HAL_Timer_freertos.o [1]
+HAL_Timer_Remain_ms      0x800'6a8d    0x10  Code  Gb  HAL_Timer_freertos.o [1]
+HAL_UART_IRQHandler      0x800'a6d1   0x172  Code  Gb  stm32f7xx_hal_uart.o [1]
+HAL_UART_Init            0x800'a415    0x7a  Code  Gb  stm32f7xx_hal_uart.o [1]
+HAL_UART_MspInit         0x800'bd01   0x11c  Code  Gb  stm32f7xx_hal_msp.o [1]
+HAL_UART_Receive_IT      0x800'a5df    0xe2  Code  Gb  stm32f7xx_hal_uart.o [1]
+HAL_UART_Transmit        0x800'a48f    0xda  Code  Gb  stm32f7xx_hal_uart.o [1]
+HAL_UART_Transmit_IT     0x800'a569    0x76  Code  Gb  stm32f7xx_hal_uart.o [1]
+HardFault_Handler        0x801'40a3     0x2  Code  Gb  stm32f7xx_it.o [1]
+IOT_DM_Init              0x800'e98d    0x9a  Code  Gb  dm_client.o [1]
+IOT_DM_Init::__func__    0x801'7230     0xc  Data  Lc  dm_client.o [1]
+IOT_DM_Property_Report   0x800'ea3d    0x2c  Code  Gb  dm_client.o [1]
+IOT_DM_TriggerEvent      0x800'ea69    0x2a  Code  Gb  dm_client.o [1]
+IOT_DM_Yield             0x800'ea93    0x1e  Code  Gb  dm_client.o [1]
+IOT_MQTT_Construct       0x800'1d1d   0x27c  Code  Gb  mqtt_client.o [1]
+IOT_MQTT_Construct::__func__
+                         0x801'687c    0x14  Data  Lc  mqtt_client.o [1]
+IOT_MQTT_IsConnected     0x800'1fdf    0x22  Code  Gb  mqtt_client.o [1]
+IOT_MQTT_Publish         0x800'1fb3    0x16  Code  Gb  mqtt_client.o [1]
+IOT_MQTT_Subscribe       0x800'1fc9    0x16  Code  Gb  mqtt_client.o [1]
+IOT_MQTT_Yield           0x800'1fa1    0x12  Code  Gb  mqtt_client.o [1]
+IOT_OTA_Destroy          0x801'0243    0x7a  Code  Gb  ota_client.o [1]
+IOT_OTA_Destroy::__func__
+                         0x801'6ff4    0x10  Data  Lc  ota_client.o [1]
+IOT_OTA_FetchYield       0x801'04b9   0x18e  Code  Gb  ota_client.o [1]
+IOT_OTA_FetchYield::__func__
+                         0x801'69d0    0x14  Data  Lc  ota_client.o [1]
+IOT_OTA_Init             0x801'0141   0x102  Code  Gb  ota_client.o [1]
+IOT_OTA_Init::__func__   0x801'6fd4    0x10  Data  Lc  ota_client.o [1]
+IOT_OTA_Ioctl            0x801'064d   0x1d4  Code  Gb  ota_client.o [1]
+IOT_OTA_Ioctl::__func__
+                         0x801'7014    0x10  Data  Lc  ota_client.o [1]
+IOT_OTA_IsFetchFinish    0x801'044b    0x6a  Code  Gb  ota_client.o [1]
+IOT_OTA_IsFetchFinish::__func__
+                         0x801'6298    0x18  Data  Lc  ota_client.o [1]
+IOT_OTA_IsFetching       0x801'03e1    0x6a  Code  Gb  ota_client.o [1]
+IOT_OTA_IsFetching::__func__
+                         0x801'69bc    0x14  Data  Lc  ota_client.o [1]
+IOT_OTA_ReportFail       0x801'02f7    0xea  Code  Gb  ota_client.o [1]
+IOT_OTA_ReportFail::__func__
+                         0x801'69a8    0x14  Data  Lc  ota_client.o [1]
+IOT_OTA_ReportProgress   0x800'fee5   0x120  Code  Gb  ota_client.o [1]
+IOT_OTA_ReportProgress::__func__
+                         0x801'6220    0x18  Data  Lc  ota_client.o [1]
+IOT_OTA_ReportSuccess    0x801'02e5    0x12  Code  Gb  ota_client.o [1]
+IOT_OTA_ReportVersion    0x801'02c1    0x12  Code  Gb  ota_client.o [1]
+IOT_OTA_RequestFirmware
+                         0x801'02d3    0x12  Code  Gb  ota_client.o [1]
+IOT_Shadow_Construct     0x800'e165    0xfe  Code  Gb  shadow_client.o [1]
+IOT_Shadow_Construct::__func__
+                         0x801'6388    0x18  Data  Lc  shadow_client.o [1]
+IOT_Shadow_Delete        0x800'e5df    0xec  Code  Gb  shadow_client.o [1]
+IOT_Shadow_Delete::__func__
+                         0x801'6afc    0x14  Data  Lc  shadow_client.o [1]
+IOT_Shadow_Delete_All    0x800'e6cb    0xae  Code  Gb  shadow_client.o [1]
+IOT_Shadow_Delete_All::__func__
+                         0x801'63b8    0x18  Data  Lc  shadow_client.o [1]
+IOT_Shadow_Direct_Update_Value
+                         0x800'e7ff   0x128  Code  Gb  shadow_client.o [1]
+IOT_Shadow_Direct_Update_Value::__func__
+                         0x801'5598    0x20  Data  Lc  shadow_client.o [1]
+IOT_Shadow_Get_Sync      0x800'e351    0xae  Code  Gb  shadow_client.o [1]
+IOT_Shadow_Get_Sync::__func__
+                         0x801'6ad4    0x14  Data  Lc  shadow_client.o [1]
+IOT_Shadow_Register_Property
+                         0x800'e2b7    0x9a  Code  Gb  shadow_client.o [1]
+IOT_Shadow_Register_Property::__func__
+                         0x801'5578    0x20  Data  Lc  shadow_client.o [1]
+IOT_Shadow_Request_Add_Delta_Property
+                         0x800'e779    0x86  Code  Gb  shadow_client.o [1]
+IOT_Shadow_Request_Add_Delta_Property::__func__
+                         0x801'481c    0x28  Data  Lc  shadow_client.o [1]
+IOT_Shadow_Update        0x800'e405    0xea  Code  Gb  shadow_client.o [1]
+IOT_Shadow_Update::__func__
+                         0x801'6ae8    0x14  Data  Lc  shadow_client.o [1]
+IOT_Shadow_Update_And_Reset_Version
+                         0x800'e4ef    0xf0  Code  Gb  shadow_client.o [1]
+IOT_Shadow_Update_And_Reset_Version::__func__
+                         0x801'4e18    0x24  Data  Lc  shadow_client.o [1]
+IOT_Shadow_Yield         0x800'e263    0x54  Code  Gb  shadow_client.o [1]
+IOT_Shadow_Yield::__func__
+                         0x801'6ac0    0x14  Data  Lc  shadow_client.o [1]
+LITE_get_boolean         0x800'69a7    0x20  Code  Gb  json_token.o [1]
+LITE_get_double          0x800'6989    0x1e  Code  Gb  json_token.o [1]
+LITE_get_float           0x800'696b    0x1e  Code  Gb  json_token.o [1]
+LITE_get_int16           0x800'68d5    0x1e  Code  Gb  json_token.o [1]
+LITE_get_int32           0x800'68b7    0x1e  Code  Gb  json_token.o [1]
+LITE_get_int8            0x800'68f3    0x1e  Code  Gb  json_token.o [1]
+LITE_get_uint16          0x800'692f    0x1e  Code  Gb  json_token.o [1]
+LITE_get_uint32          0x800'6911    0x1e  Code  Gb  json_token.o [1]
+LITE_get_uint8           0x800'694d    0x1e  Code  Gb  json_token.o [1]
+LITE_json_value_of       0x800'67f1    0xc6  Code  Gb  json_token.o [1]
+LoadInt                  0x800'6ee7    0x7a  Code  Lc  xprintffull.o [2]
+MX_GPIO_Init             0x800'de99   0x166  Code  Lc  main.o [1]
+MX_USART2_UART_Init      0x800'dd75    0x3c  Code  Lc  main.o [1]
+MX_USART3_UART_Init      0x800'ddb1    0x3c  Code  Lc  main.o [1]
+MX_USART6_UART_Init      0x800'ddf5    0x3c  Code  Lc  main.o [1]
+MX_USB_OTG_FS_PCD_Init   0x800'de31    0x3c  Code  Lc  main.o [1]
+MemManage_Handler        0x801'40a5     0x2  Code  Gb  stm32f7xx_it.o [1]
+NMI_Handler              0x801'40a1     0x2  Code  Gb  stm32f7xx_it.o [1]
+NVIC_EncodePriority      0x800'cb71    0x40  Code  Lc  stm32f7xx_hal_cortex.o [1]
+PendSV_Handler           0x800'9151          Code  Gb  portasm.o [1]
+RegCallback_hold         0x800'd413    0x4a  Code  Gb  main.o [1]
+RegCallback_hold::__func__
+                         0x801'67f0    0x14  Data  Lc  main.o [1]
+RegCallback_update       0x800'd3d5    0x3e  Code  Gb  main.o [1]
+RegCallback_update::__func__
+                         0x801'67c8    0x14  Data  Lc  main.o [1]
+Region$$Table$$Base      0x801'5058           --   Gb  - Linker created -
+Region$$Table$$Limit     0x801'5078           --   Gb  - Linker created -
+SVC_Handler              0x800'91ad          Code  Gb  portasm.o [1]
+StartDefaultTask         0x800'e00d     0xe  Code  Gb  main.o [1]
+SysTick_Handler          0x800'6c0b    0x2c  Code  Gb  port.o [1]
+SystemClock_Config       0x800'dc9d    0xd8  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'00f0     0x4  Data  Gb  system_stm32f7xx.o [1]
+SystemInit               0x801'3901    0x40  Code  Gb  system_stm32f7xx.o [1]
+TIM1_UP_TIM10_IRQHandler
+                         0x801'40ad     0xa  Code  Gb  stm32f7xx_it.o [1]
+TIM_Base_SetConfig       0x800'd129    0xc6  Code  Gb  stm32f7xx_hal_tim.o [1]
+UART_AdvFeatureConfig    0x800'ac3f    0xda  Code  Gb  stm32f7xx_hal_uart.o [1]
+UART_CheckIdleState      0x800'ad19    0x44  Code  Gb  stm32f7xx_hal_uart.o [1]
+UART_DMAAbortOnError     0x800'ade9    0x1a  Code  Lc  stm32f7xx_hal_uart.o [1]
+UART_EndRxTransfer       0x800'adc7    0x22  Code  Lc  stm32f7xx_hal_uart.o [1]
+UART_EndTransmit_IT      0x800'ae8f    0x20  Code  Lc  stm32f7xx_hal_uart.o [1]
+UART_RxISR_16BIT         0x800'af49    0x6c  Code  Lc  stm32f7xx_hal_uart.o [1]
+UART_RxISR_8BIT          0x800'aeaf    0x64  Code  Lc  stm32f7xx_hal_uart.o [1]
+UART_SetConfig           0x800'a843   0x3fa  Code  Gb  stm32f7xx_hal_uart.o [1]
+UART_TxISR_16BIT         0x800'ae47    0x48  Code  Lc  stm32f7xx_hal_uart.o [1]
+UART_TxISR_8BIT          0x800'ae05    0x42  Code  Lc  stm32f7xx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                         0x800'ad5d    0x6a  Code  Gb  stm32f7xx_hal_uart.o [1]
+USART2_IRQHandler        0x801'40b7     0xa  Code  Gb  stm32f7xx_it.o [1]
+USART6_IRQHandler        0x801'40c1     0xa  Code  Gb  stm32f7xx_it.o [1]
+USB_CoreInit             0x801'1a51    0x70  Code  Gb  stm32f7xx_ll_usb.o [1]
+USB_CoreReset            0x801'1db5    0x38  Code  Lc  stm32f7xx_ll_usb.o [1]
+USB_DevDisconnect        0x801'1d95    0x20  Code  Gb  stm32f7xx_ll_usb.o [1]
+USB_DevInit              0x801'1b0f   0x220  Code  Gb  stm32f7xx_ll_usb.o [1]
+USB_DisableGlobalInt     0x801'1ac1     0xe  Code  Gb  stm32f7xx_ll_usb.o [1]
+USB_FlushRxFifo          0x801'1d53    0x20  Code  Gb  stm32f7xx_ll_usb.o [1]
+USB_FlushTxFifo          0x801'1d2f    0x24  Code  Gb  stm32f7xx_ll_usb.o [1]
+USB_SetCurrentMode       0x801'1acf    0x40  Code  Gb  stm32f7xx_ll_usb.o [1]
+USB_SetDevSpeed          0x801'1d73    0x1e  Code  Gb  stm32f7xx_ll_usb.o [1]
+UsageFault_Handler       0x801'40a9     0x2  Code  Gb  stm32f7xx_it.o [1]
+_Encoding_8859_1_Mbrlen
+                         0x800'2349     0x2  Code  Gb  xencoding_8859_1.o [2]
+_Encoding_8859_1_Mbtowc
+                         0x800'2341     0x8  Code  Gb  xencoding_8859_1.o [2]
+_Encoding_8859_1_Wctomb
+                         0x800'232f    0x12  Code  Gb  xencoding_8859_1.o [2]
+_Files                  0x2000'01cc    0x20  Data  Gb  xfiles.o [2]
+_GenldFull               0x800'7945   0x274  Code  Lc  xprintffull.o [2]
+_GetN                    0x800'82f9    0x22  Code  Lc  xscanffull.o [2]
+_GetfldFull              0x800'8533   0x12e  Code  Lc  xscanffull.o [2]
+_GetfloatFull            0x800'8b99   0x540  Code  Lc  xscanffull.o [2]
+_GetintFull              0x800'8975   0x21e  Code  Lc  xscanffull.o [2]
+_GetstrFull              0x800'86a5   0x2cc  Code  Lc  xscanffull.o [2]
+_LdtobFull               0x800'7541   0x3d6  Code  Lc  xprintffull.o [2]
+_LitobFull               0x800'73f1   0x10a  Code  Lc  xprintffull.o [2]
+_LocaleC_isalpha         0x800'920b     0xc  Code  Gb  xlocale_c.o [2]
+_LocaleC_islower         0x800'9205     0x4  Code  Gb  xlocale_c.o [2]
+_LocaleC_isspace         0x800'9221    0x14  Code  Gb  xlocale_c.o [2]
+_LocaleC_isupper         0x800'9209     0x2  Code  Gb  xlocale_c.o [2]
+_LocaleC_tolower         0x800'9235     0xc  Code  Gb  xlocale_c.o [2]
+_Locale_lconv           0x2000'01ec    0x38  Data  Lc  xlocale_c.o [2]
+_PrintfFull              0x800'6d25   0x1aa  Code  Gb  xprintffull.o [2]
+_Prout                   0x801'65b1    0x16  Code  Gb  xprout.o [2]
+_PutcharsFull            0x800'7bb9    0x2e  Code  Lc  xprintffull.o [2]
+_PutfldFull              0x800'6f61   0x2d4  Code  Lc  xprintffull.o [2]
+_PutstrFull              0x800'732b    0xc6  Code  Lc  xprintffull.o [2]
+_PuttxtFull              0x800'7235    0xf6  Code  Lc  xprintffull.o [2]
+_SNProut                 0x800'2937    0x1a  Code  Gb  xsnprout.o [2]
+_SScin                   0x800'2873    0x1e  Code  Gb  xsscin.o [2]
+_ScanfFull               0x800'8335   0x1e6  Code  Gb  xscanffull.o [2]
+_UngetN                  0x800'831b    0x1a  Code  Lc  xscanffull.o [2]
+__NVIC_EnableIRQ         0x800'cb27    0x1e  Code  Lc  stm32f7xx_hal_cortex.o [1]
+__NVIC_GetPriorityGrouping
+                         0x800'cb1b     0xc  Code  Lc  stm32f7xx_hal_cortex.o [1]
+__NVIC_SetPriority       0x800'cb45    0x2c  Code  Lc  stm32f7xx_hal_cortex.o [1]
+__NVIC_SetPriorityGrouping
+                         0x800'caf9    0x22  Code  Lc  stm32f7xx_hal_cortex.o [1]
+__aeabi_cdcmple          0x800'9679          Code  Gb  DblCmpLe.o [3]
+__aeabi_cdrcmple         0x800'96a9          Code  Gb  DblCmpGe.o [3]
+__aeabi_d2f              0x800'a2c3     0xe  Code  Gb  DblToFlt.o [3]
+__aeabi_d2iz             0x800'97dd     0xe  Code  Gb  DblToS32.o [3]
+__aeabi_d2uiz            0x800'981d     0xe  Code  Gb  DblToU32.o [3]
+__aeabi_ddiv             0x800'980b    0x12  Code  Gb  DblDiv.o [3]
+__aeabi_dmul             0x800'95dd    0x12  Code  Gb  DblMul.o [3]
+__aeabi_dsub             0x800'97f9    0x12  Code  Gb  DblSub.o [3]
+__aeabi_i2d              0x800'97eb     0xe  Code  Gb  S32ToDbl.o [3]
+__aeabi_ldiv0            0x800'a2d9          Code  Gb  I64DivZer.o [4]
+__aeabi_memclr4          0x800'22b9          Code  Gb  ABImemclr4.o [4]
+__aeabi_memcpy           0x800'2891          Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4          0x800'28b1          Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8          0x800'28b1          Code  Gb  ABImemcpy.o [4]
+__aeabi_memmove          0x801'37fd          Code  Gb  ABImemmove.o [4]
+__aeabi_memmove4         0x801'37fd          Code  Gb  ABImemmove.o [4]
+__aeabi_memmove8         0x801'37fd          Code  Gb  ABImemmove.o [4]
+__aeabi_memset           0x800'1c3d          Code  Gb  ABImemset.o [4]
+__aeabi_ui2d             0x800'982b     0xe  Code  Gb  U32ToDbl.o [3]
+__aeabi_uldivmod         0x800'93ad          Code  Gb  I64DivMod.o [4]
+__cmain                  0x801'5799          Code  Gb  cmain.o [4]
+__dwrite                 0x800'9839    0x1e  Code  Gb  dwrite.o [5]
+__exit                   0x800'bc35    0x14  Code  Gb  exit.o [5]
+__iar_Fail_s             0x800'9309    0x1c  Code  Gb  xfail_s.o [2]
+__iar_Mbcurmax           0x800'93a1     0xa  Code  Gb  xmbcurmax.o [2]
+__iar_Memchr             0x800'9349          Code  Gb  memchr.o [4]
+__iar_Memset             0x800'1c3d          Code  Gb  ABImemset.o [4]
+__iar_Memset4_word       0x800'67bd          Code  Gb  ABImemset48.o [4]
+__iar_Memset8_word       0x800'67bd          Code  Gb  ABImemset48.o [4]
+__iar_Memset_word        0x800'1c45          Code  Gb  ABImemset.o [4]
+__iar_Stderr            0x2000'0184    0x48  Data  Gb  xfiles.o [2]
+__iar_Stdin             0x2000'00f4    0x48  Data  Gb  xfiles.o [2]
+__iar_Stdout            0x2000'013c    0x48  Data  Gb  xfiles.o [2]
+__iar_Sto64              0x800'baad   0x142  Code  Gb  strto64.o [3]
+__iar_Stoflt             0x800'c6dd   0x1c4  Code  Gb  iar_Stoflt.o [2]
+__iar_Stollx             0x800'a04d    0x96  Code  Gb  iar_Stollx.o [2]
+__iar_Stopfx             0x800'c5b9   0x122  Code  Gb  iar_Stopfx.o [2]
+__iar_Stoullx            0x800'a0ed   0x1a4  Code  Gb  iar_Stoullx.o [2]
+__iar_Stoulx             0x801'36b1   0x13a  Code  Gb  iar_Stoulx.o [2]
+__iar_Stoxflt            0x800'c8a1   0x1e6  Code  Gb  iar_Stoxflt.o [2]
+__iar_Stoxflt::digits    0x800'ca8c    0x18  Data  Lc  iar_Stoxflt.o [2]
+__iar_Stoxflt::vals      0x800'caa4    0x18  Data  Lc  iar_Stoxflt.o [2]
+__iar_Strchr             0x800'7e3d          Code  Gb  strchr.o [4]
+__iar_close_ttio         0x800'bc49    0x2e  Code  Gb  iarttio.o [5]
+__iar_data_init3         0x801'4a25    0x28  Code  Gb  data_init.o [4]
+__iar_frexp              0x800'9615          Code  Gb  frexp.o [3]
+__iar_frexp64            0x800'95f1          Code  Gb  frexp.o [3]
+__iar_frexpl             0x800'9615          Code  Gb  frexp.o [3]
+__iar_get_ttio           0x800'bc79    0x4c  Code  Gb  iarttio.o [5]
+__iar_globLocale        0x2000'0224    0x48  Data  Lc  xlocale_c.o [2]
+__iar_global_Locale      0x800'9241     0x4  Code  Gb  xlocale_c.o [2]
+__iar_init_vfp           0x801'5035          Code  Gb  fpinit_M.o [3]
+__iar_ldexp64            0x800'96ed          Code  Gb  ldexp.o [3]
+__iar_lookup_ttioh       0x800'caeb     0x4  Code  Gb  XShttio.o [2]
+__iar_lz77_init_single3
+                         0x800'1ca3    0x7a  Code  Gb  lz77_init_single.o [4]
+__iar_program_start      0x801'73c9          Code  Gb  cstartup_M.o [4]
+__iar_scalbln64          0x800'96ed          Code  Gb  ldexp.o [3]
+__iar_scalbn64           0x800'96ed          Code  Gb  ldexp.o [3]
+__iar_sh_stdout          0x800'a2db    0x20  Code  Gb  iarwstd.o [5]
+__iar_sh_write           0x800'a2fb    0x22  Code  Gb  iarwrite.o [5]
+__iar_softfp___iar_Sto64
+                         0x800'a2a7     0x8  Code  Gb  math_wrappers64.o [3]
+__iar_softfp___iar_frexp64
+                         0x800'9609          Code  Gb  frexp.o [3]
+__iar_softfp___iar_ldexp64
+                         0x800'96d9          Code  Gb  ldexp.o [3]
+__iar_softfp___iar_scalbln64
+                         0x800'96d9          Code  Gb  ldexp.o [3]
+__iar_softfp___iar_scalbn64
+                         0x800'96d9          Code  Gb  ldexp.o [3]
+__iar_softfp_frexp       0x800'9609          Code  Gb  frexp.o [3]
+__iar_softfp_frexpl      0x800'9609          Code  Gb  frexp.o [3]
+__iar_softfp_ldexp       0x800'96d9          Code  Gb  ldexp.o [3]
+__iar_softfp_ldexpl      0x800'96d9          Code  Gb  ldexp.o [3]
+__iar_softfp_scalbln     0x800'96d9          Code  Gb  ldexp.o [3]
+__iar_softfp_scalblnl    0x800'96d9          Code  Gb  ldexp.o [3]
+__iar_softfp_scalbn      0x800'96d9          Code  Gb  ldexp.o [3]
+__iar_softfp_scalbnl     0x800'96d9          Code  Gb  ldexp.o [3]
+__iar_ttio_guard_lock    0x800'cabd    0x1e  Code  Gb  XShttio.o [2]
+__iar_ttio_guard_unlock
+                         0x800'cadb    0x10  Code  Gb  XShttio.o [2]
+__iar_ttio_handles      0x2000'026c     0x8  Data  Lc  XShttio.o [2]
+__iar_zero_init3         0x800'22bf    0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x801'57b7     0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000          Data  Gb  startup_stm32f767xx.o [1]
+__write                  0x800'7c6b    0x10  Code  Gb  write.o [5]
+_add_property_handle_to_list
+                         0x800'18a9    0xb2  Code  Lc  shadow_client_common.o [1]
+_add_property_handle_to_list::__func__
+                         0x801'55f8    0x20  Data  Lc  shadow_client_common.o [1]
+_call_main               0x801'57a5          Code  Gb  cmain.o [4]
+_check_handle_is_identical
+                         0x800'537d    0x4a  Code  Lc  mqtt_client_common.o [1]
+_check_snprintf_return   0x800'2355    0x5c  Code  Gb  shadow_client_json.o [1]
+_check_snprintf_return::__func__
+                         0x801'63e8    0x18  Data  Lc  shadow_client_json.o [1]
+_copy_connect_params     0x800'3ef1    0x26  Code  Lc  mqtt_client_connect.o [1]
+_decode_packet_rem_len_from_buf_read
+                         0x800'543d    0x60  Code  Lc  mqtt_client_common.o [1]
+_decode_packet_rem_len_with_net_read
+                         0x800'596d    0x7a  Code  Lc  mqtt_client_common.o [1]
+_deliver_message         0x800'5c8b   0x11e  Code  Lc  mqtt_client_common.o [1]
+_deliver_message::__func__
+                         0x801'68a4    0x14  Data  Lc  mqtt_client_common.o [1]
+_deserialize_connack_packet
+                         0x800'4059   0x10c  Code  Lc  mqtt_client_connect.o [1]
+_dm_mqtt_common_reply_cb
+                         0x800'ed45   0x112  Code  Lc  dm_mqtt.o [1]
+_dm_mqtt_common_reply_cb::__func__
+                         0x801'5820    0x1c  Data  Lc  dm_mqtt.o [1]
+_dm_mqtt_gen_event_payload
+                         0x800'ec1f    0x84  Code  Lc  dm_mqtt.o [1]
+_dm_mqtt_gen_event_payload::__func__
+                         0x801'57e8    0x1c  Data  Lc  dm_mqtt.o [1]
+_dm_mqtt_gen_property_payload
+                         0x800'eb31    0xee  Code  Lc  dm_mqtt.o [1]
+_dm_mqtt_gen_property_payload::__func__
+                         0x801'50d8    0x20  Data  Lc  dm_mqtt.o [1]
+_dm_mqtt_gen_topic_name
+                         0x800'eab1    0x80  Code  Lc  dm_mqtt.o [1]
+_dm_mqtt_gen_topic_name::__func__
+                         0x801'5f38    0x18  Data  Lc  dm_mqtt.o [1]
+_dm_mqtt_publish         0x800'eca3    0x9c  Code  Lc  dm_mqtt.o [1]
+_dm_mqtt_publish::__func__
+                         0x801'6674    0x14  Data  Lc  dm_mqtt.o [1]
+_dsc_mqtt_register_callback
+                         0x800'f829   0x160  Code  Gb  dm_mqtt.o [1]
+_dsc_mqtt_register_callback::__func__
+                         0x801'5900    0x1c  Data  Lc  dm_mqtt.o [1]
+_exit                    0x801'57c1          Code  Gb  cexit.o [4]
+_gLocale_mblen           0x800'92e7     0x4  Code  Gb  xlocale_c.o [2]
+_gLocale_mblenInt        0x800'9269    0x2c  Code  Gb  xlocale_c.o [2]
+_gLocale_mbtowc          0x800'92eb     0xc  Code  Gb  xlocale_c.o [2]
+_gLocale_mbtowcInt       0x800'9295    0x42  Code  Gb  xlocale_c.o [2]
+_gLocale_wctomb          0x800'92f7     0x4  Code  Gb  xlocale_c.o [2]
+_gLocale_wctombInt       0x800'92e3     0x4  Code  Gb  xlocale_c.o [2]
+_get_packet_connect_rem_len
+                         0x800'3ea1    0x50  Code  Lc  mqtt_client_connect.o [1]
+_get_publish_packet_len
+                         0x800'4a6d    0x22  Code  Lc  mqtt_client_publish.o [1]
+_get_subscribe_packet_rem_len
+                         0x800'500d    0x24  Code  Lc  mqtt_client_subscribe.o [1]
+_handle_delta            0x800'085b   0x150  Code  Lc  shadow_client_manager.o [1]
+_handle_delta::__func__
+                         0x801'7114    0x10  Data  Lc  shadow_client_manager.o [1]
+_handle_disconnect       0x800'4401    0x62  Code  Lc  mqtt_client_yield.o [1]
+_handle_disconnect::__func__
+                         0x801'6944    0x14  Data  Lc  mqtt_client_yield.o [1]
+_handle_expired_request
+                         0x800'0bf9    0x34  Code  Gb  shadow_client_manager.o [1]
+_handle_expired_request::__func__
+                         0x801'64a8    0x18  Data  Lc  shadow_client_manager.o [1]
+_handle_expired_request_callback
+                         0x800'0b75    0x7a  Code  Lc  shadow_client_manager.o [1]
+_handle_expired_request_callback::__func__
+                         0x801'4f38    0x24  Data  Lc  shadow_client_manager.o [1]
+_handle_pingresp_packet
+                         0x800'6437    0x2a  Code  Lc  mqtt_client_common.o [1]
+_handle_puback_packet    0x800'5f0d    0x6e  Code  Lc  mqtt_client_common.o [1]
+_handle_publish_packet   0x800'6267   0x146  Code  Lc  mqtt_client_common.o [1]
+_handle_publish_packet::__func__
+                         0x801'6148    0x18  Data  Lc  mqtt_client_common.o [1]
+_handle_pubrec_packet    0x800'63ad    0x8a  Code  Lc  mqtt_client_common.o [1]
+_handle_reconnect        0x800'4463    0x94  Code  Lc  mqtt_client_yield.o [1]
+_handle_reconnect::__func__
+                         0x801'6958    0x14  Data  Lc  mqtt_client_yield.o [1]
+_handle_request_callback
+                         0x800'0a81    0xee  Code  Lc  shadow_client_manager.o [1]
+_handle_request_callback::__func__
+                         0x801'5dec    0x1c  Data  Lc  shadow_client_manager.o [1]
+_handle_suback_packet    0x800'5f7b   0x24e  Code  Lc  mqtt_client_common.o [1]
+_handle_suback_packet::__func__
+                         0x801'6130    0x18  Data  Lc  mqtt_client_common.o [1]
+_handle_unsuback_packet
+                         0x800'61d9    0x8e  Code  Lc  mqtt_client_common.o [1]
+_http_client_recv_response
+                         0x801'3379    0xc6  Code  Lc  utils_httpc.o [1]
+_http_client_recv_response::__func__
+                         0x801'5ee8    0x1c  Data  Lc  utils_httpc.o [1]
+_http_connect            0x801'3235    0xa4  Code  Lc  utils_httpc.o [1]
+_http_connect::__func__
+                         0x801'71b4    0x10  Data  Lc  utils_httpc.o [1]
+_http_get_response_body
+                         0x801'2f89   0x11e  Code  Lc  utils_httpc.o [1]
+_http_get_response_body::__func__
+                         0x801'6568    0x18  Data  Lc  utils_httpc.o [1]
+_http_parse_response_header
+                         0x801'30ad   0x188  Code  Lc  utils_httpc.o [1]
+_http_parse_response_header::__func__
+                         0x801'5ecc    0x1c  Data  Lc  utils_httpc.o [1]
+_http_recv               0x801'2df5    0x58  Code  Lc  utils_httpc.o [1]
+_http_send_header        0x801'2c0d   0x184  Code  Lc  utils_httpc.o [1]
+_http_send_header::__func__
+                         0x801'6c28    0x14  Data  Lc  utils_httpc.o [1]
+_http_send_request       0x801'32e1    0x98  Code  Gb  utils_httpc.o [1]
+_http_send_user_data     0x801'2d91    0x5c  Code  Gb  utils_httpc.o [1]
+_http_send_user_data::__func__
+                         0x801'6520    0x18  Data  Lc  utils_httpc.o [1]
+_iot_disconnect_callback
+                         0x800'43b1    0x28  Code  Lc  mqtt_client_yield.o [1]
+_is_topic_equals         0x800'5baf    0x2e  Code  Lc  mqtt_client_common.o [1]
+_is_topic_matched        0x800'5bdd    0xae  Code  Lc  mqtt_client_common.o [1]
+_main                    0x801'57b3          Code  Gb  cmain.o [4]
+_mask_pubInfo_from       0x800'5dad    0xa2  Code  Lc  mqtt_client_common.o [1]
+_mask_pubInfo_from::__func__
+                         0x801'68cc    0x14  Data  Lc  mqtt_client_common.o [1]
+_mask_push_pubInfo_to    0x800'4a8f   0x168  Code  Lc  mqtt_client_publish.o [1]
+_mask_push_pubInfo_to::__func__
+                         0x801'6190    0x18  Data  Lc  mqtt_client_publish.o [1]
+_mask_sub_info_from      0x800'5e4f    0xae  Code  Lc  mqtt_client_common.o [1]
+_mask_sub_info_from::__func__
+                         0x801'68e0    0x14  Data  Lc  mqtt_client_common.o [1]
+_mqtt_connect            0x800'4165   0x11a  Code  Lc  mqtt_client_connect.o [1]
+_mqtt_keep_alive         0x800'44f7   0x140  Code  Lc  mqtt_client_yield.o [1]
+_mqtt_keep_alive::__func__
+                         0x801'696c    0x14  Data  Lc  mqtt_client_yield.o [1]
+_ota_callback            0x800'fd6d   0x178  Code  Lc  ota_client.o [1]
+_ota_callback::__func__
+                         0x801'6f94    0x10  Data  Lc  ota_client.o [1]
+_ota_mqtt_gen_topic_name
+                         0x801'1709    0x8c  Code  Lc  ota_mqtt.o [1]
+_ota_mqtt_gen_topic_name::__func__
+                         0x801'5c64    0x1c  Data  Lc  ota_mqtt.o [1]
+_ota_mqtt_publish        0x801'1795    0xd4  Code  Lc  ota_mqtt.o [1]
+_ota_mqtt_publish::__func__
+                         0x801'6a84    0x14  Data  Lc  ota_mqtt.o [1]
+_ota_mqtt_upgrade_cb     0x801'1869    0x54  Code  Lc  ota_mqtt.o [1]
+_ota_mqtt_upgrade_cb::__func__
+                         0x801'6358    0x18  Data  Lc  ota_mqtt.o [1]
+_publish_msg             0x800'd2ed    0x8a  Code  Lc  main.o [1]
+_read_mqtt_packet        0x800'59e7   0x1c8  Code  Lc  mqtt_client_common.o [1]
+_read_mqtt_packet::__func__
+                         0x801'6890    0x14  Data  Lc  mqtt_client_common.o [1]
+_read_string_with_len    0x800'4a01    0x6c  Code  Lc  mqtt_client_publish.o [1]
+_read_string_with_len::__func__
+                         0x801'6178    0x18  Data  Lc  mqtt_client_publish.o [1]
+_reconnect_callback      0x800'43d9    0x28  Code  Lc  mqtt_client_yield.o [1]
+_register_subscribe_topics
+                         0x800'd377    0x5e  Code  Lc  main.o [1]
+_register_subscribe_topics::topic_name
+                        0x2000'ec8c    0x80  Data  Lc  main.o [1]
+_serialize_connect_packet
+                         0x800'3f17   0x13a  Code  Lc  mqtt_client_connect.o [1]
+_serialize_publish_packet
+                         0x800'4d91    0xd4  Code  Lc  mqtt_client_publish.o [1]
+_serialize_subscribe_packet
+                         0x800'5031    0xc4  Code  Lc  mqtt_client_subscribe.o [1]
+_setup_connect_init_params
+                         0x800'd2a1    0x2c  Code  Lc  main.o [1]
+_traverse_list           0x800'09ab    0xd0  Code  Lc  shadow_client_manager.o [1]
+_traverse_list::__func__
+                         0x801'7124    0x10  Data  Lc  shadow_client_manager.o [1]
+_update_ack_cb           0x800'd45d    0x78  Code  Lc  main.o [1]
+_update_ack_cb::__func__
+                         0x801'6e64    0x10  Data  Lc  main.o [1]
+_utils_check_deadloop    0x801'2e4d    0xb4  Code  Lc  utils_httpc.o [1]
+_utils_check_deadloop::__func__
+                         0x801'6538    0x18  Data  Lc  utils_httpc.o [1]
+_utils_fill_rx_buf       0x801'2f0d    0x7c  Code  Lc  utils_httpc.o [1]
+_utils_fill_tx_buffer    0x801'2b67    0xa6  Code  Lc  utils_httpc.o [1]
+_utils_parse_url         0x801'2ad5    0x92  Code  Lc  utils_httpc.o [1]
+abort                    0x800'a2d1     0x6  Code  Gb  abort.o [2]
+at_client_get            0x800'b3f9     0x4  Code  Gb  at_client.o [1]
+at_client_getchar        0x800'b381    0x48  Code  Gb  at_client.o [1]
+at_client_init           0x800'b5b3    0x5e  Code  Gb  at_client.o [1]
+at_client_init::__func__
+                         0x801'6d14    0x10  Data  Lc  at_client.o [1]
+at_client_para_init      0x800'b53b    0x78  Code  Gb  at_client.o [1]
+at_client_para_init::__func__
+                         0x801'65fc    0x14  Data  Lc  at_client.o [1]
+at_client_tcp_init       0x800'b4e3    0x58  Code  Gb  at_client.o [1]
+at_connect_tcp           0x800'7d2d    0x30  Code  Lc  utils_net.o [1]
+at_connect_tcp::__func__
+                         0x801'71f4    0x10  Data  Lc  utils_net.o [1]
+at_create_resp           0x800'afb5    0x7e  Code  Gb  at_client.o [1]
+at_create_resp::__func__
+                         0x801'6cb4    0x10  Data  Lc  at_client.o [1]
+at_delete_resp           0x800'b033    0x24  Code  Gb  at_client.o [1]
+at_disconnect_tcp        0x800'7d01    0x2c  Code  Lc  utils_net.o [1]
+at_disconnect_tcp::__func__
+                         0x801'6ca0    0x14  Data  Lc  utils_net.o [1]
+at_get_last_cmd          0x800'b6bd     0xc  Code  Gb  at_utils.o [1]
+at_obj_exec_cmd          0x800'b24d   0x134  Code  Gb  at_client.o [1]
+at_obj_exec_cmd::__func__
+                         0x801'6cf4    0x10  Data  Lc  at_client.o [1]
+at_read_tcp              0x800'7c95    0x36  Code  Lc  utils_net.o [1]
+at_read_tcp::__func__    0x801'73bc     0xc  Data  Lc  utils_net.o [1]
+at_recv_readline         0x800'b401    0xe2  Code  Gb  at_client.o [1]
+at_recv_readline::__func__
+                         0x801'65e8    0x14  Data  Lc  at_client.o [1]
+at_set_urc_table         0x800'b3cd    0x2c  Code  Gb  at_client.o [1]
+at_set_urc_table::__func__
+                         0x801'65d4    0x14  Data  Lc  at_client.o [1]
+at_vprintf               0x800'b6c9    0x62  Code  Gb  at_utils.o [1]
+at_vprintfln             0x800'b735    0x1a  Code  Gb  at_utils.o [1]
+at_write_tcp             0x800'7ccb    0x36  Code  Lc  utils_net.o [1]
+at_write_tcp::__func__   0x801'71e4    0x10  Data  Lc  utils_net.o [1]
+atoi                     0x801'37f1     0x2  Code  Gb  iar_Stoulx.o [2]
+bufchar                  0x800'549d    0x24  Code  Gb  mqtt_client_common.o [1]
+bufptr                  0x2000'efa4     0x4  Data  Lc  mqtt_client_common.o [1]
+client_parser            0x800'b0e5   0x168  Code  Lc  at_client.o [1]
+client_parser::__func__
+                         0x801'6cd4    0x10  Data  Lc  at_client.o [1]
+cloud_rcv_buf           0x2000'da78   0x804  Data  Lc  shadow_client_manager.o [1]
+cloud_send_method       0x2000'eff1     0x1  Data  Lc  shadow_client_manager.o [1]
+command_cb               0x800'd275    0x26  Code  Gb  main.o [1]
+countdown                0x800'284b    0x10  Code  Gb  utils_timer.o [1]
+countdown_ms             0x800'283b    0x10  Code  Gb  utils_timer.o [1]
+custom_table            0x2000'0074    0x70  Data  Gb  esp8266.o [1]
+custom_table_num        0x2000'00e4     0x4  Data  Gb  esp8266.o [1]
+cycle_for_read           0x800'6461   0x108  Code  Gb  mqtt_client_common.o [1]
+cycle_for_read::__func__
+                         0x801'6f14    0x10  Data  Lc  mqtt_client_common.o [1]
+ddiv                     0x800'b88d    0x86  Code  Lc  strto64.o [3]
+defaultTaskHandle       0x2000'ef9c     0x4  Data  Gb  main.o [1]
+deserialize_ack_packet   0x800'5657    0xf8  Code  Gb  mqtt_client_common.o [1]
+deserialize_ack_packet::__func__
+                         0x801'6118    0x18  Data  Lc  mqtt_client_common.o [1]
+deserialize_publish_packet
+                         0x800'4bfd    0xfc  Code  Gb  mqtt_client_publish.o [1]
+deserialize_suback_packet
+                         0x800'5755    0xe0  Code  Gb  mqtt_client_common.o [1]
+deserialize_unsuback_packet
+                         0x800'5835    0x4c  Code  Gb  mqtt_client_common.o [1]
+digits                   0x801'39dc    0x28  Data  Lc  iar_Stoulx.o [2]
+digits                   0x801'3a2c    0x28  Data  Lc  iar_Stoullx.o [2]
+dm_mqtt_command_cb       0x800'f535   0x2c8  Code  Gb  dm_mqtt.o [1]
+dm_mqtt_command_cb::__func__
+                         0x801'66b0    0x14  Data  Lc  dm_mqtt.o [1]
+dm_mqtt_event_post_cb    0x800'f487    0x6e  Code  Gb  dm_mqtt.o [1]
+dm_mqtt_event_post_cb::__func__
+                         0x801'5fc8    0x18  Data  Lc  dm_mqtt.o [1]
+dm_mqtt_event_publish    0x800'fbc9   0x122  Code  Gb  dm_mqtt.o [1]
+dm_mqtt_event_publish::__func__
+                         0x801'6010    0x18  Data  Lc  dm_mqtt.o [1]
+dm_mqtt_property_desired_delete_cb
+                         0x800'f419    0x6e  Code  Gb  dm_mqtt.o [1]
+dm_mqtt_property_desired_delete_cb::__func__
+                         0x801'4bd8    0x24  Data  Lc  dm_mqtt.o [1]
+dm_mqtt_property_desired_get_cb
+                         0x800'f291   0x188  Code  Gb  dm_mqtt.o [1]
+dm_mqtt_property_desired_get_cb::__func__
+                         0x801'5198    0x20  Data  Lc  dm_mqtt.o [1]
+dm_mqtt_property_post_cb
+                         0x800'efe9    0x68  Code  Gb  dm_mqtt.o [1]
+dm_mqtt_property_post_cb::__func__
+                         0x801'5874    0x1c  Data  Lc  dm_mqtt.o [1]
+dm_mqtt_property_report_publish
+                         0x800'fa89   0x12c  Code  Gb  dm_mqtt.o [1]
+dm_mqtt_property_report_publish::__func__
+                         0x801'5218    0x20  Data  Lc  dm_mqtt.o [1]
+dm_mqtt_property_restore_cb
+                         0x800'ee57   0x18c  Code  Gb  dm_mqtt.o [1]
+dm_mqtt_property_restore_cb::__func__
+                         0x801'5858    0x1c  Data  Lc  dm_mqtt.o [1]
+dm_mqtt_property_set_cb
+                         0x800'f055   0x232  Code  Gb  dm_mqtt.o [1]
+dm_mqtt_property_set_cb::__func__
+                         0x801'5f98    0x18  Data  Lc  dm_mqtt.o [1]
+dmul                     0x800'b805    0x88  Code  Lc  strto64.o [3]
+dsc_init                 0x800'f9e9    0x86  Code  Gb  dm_mqtt.o [1]
+dsc_init::__func__       0x801'7278     0xc  Data  Lc  dm_mqtt.o [1]
+ebuf                    0x2000'ed0c    0x50  Data  Lc  xfiles.o [2]
+esp8266_init             0x800'9cbf   0x132  Code  Lc  esp8266.o [1]
+esp8266_init::__func__   0x801'6de4    0x10  Data  Lc  esp8266.o [1]
+esp8266_link            0x2000'eef0    0x14  Data  Gb  esp8266.o [1]
+esp8266_recv_len        0x2000'ef04    0x14  Data  Gb  esp8266.o [1]
+esp8266_test             0x800'd4dd   0x74c  Code  Gb  main.o [1]
+esp8266_test::__func__   0x801'6e84    0x10  Data  Lc  main.o [1]
+event_handler            0x800'd225    0x44  Code  Lc  main.o [1]
+event_post_cb            0x800'd269     0x6  Code  Gb  main.o [1]
+exit                     0x801'57bb     0x4  Code  Gb  exit.o [2]
+fflush                   0x800'32fd    0x34  Code  Gb  fflush.o [2]
+fflushOne                0x800'3289    0x74  Code  Lc  fflush.o [2]
+find_value_if_key_match
+                         0x800'277d    0x38  Code  Gb  shadow_client_json.o [1]
+fputc                    0x800'dc83    0x1a  Code  Gb  main.o [1]
+frexp                    0x800'95f1          Code  Gb  frexp.o [3]
+frexpl                   0x800'95f1          Code  Gb  frexp.o [3]
+g_dm_mqtt_cb            0x2000'0000    0x70  Data  Gb  dm_mqtt.o [1]
+g_ring_buff             0x2000'eedc    0x14  Data  Gb  at_client.o [1]
+g_ring_tcp_buff         0x2000'ee6c    0x3c  Data  Gb  at_client.o [1]
+get_client_conn_state    0x800'65ed    0x1e  Code  Gb  mqtt_client_common.o [1]
+get_mqtt_packet_len      0x800'5419    0x24  Code  Gb  mqtt_client_common.o [1]
+get_next_packet_id       0x800'53c7    0x36  Code  Gb  mqtt_client_common.o [1]
+get_urc_obj              0x800'b05d    0x88  Code  Lc  at_client.o [1]
+has_expired              0x800'282f     0xc  Code  Gb  utils_timer.o [1]
+hpcd_USB_OTG_FS         0x2000'e27c   0x404  Data  Gb  main.o [1]
+htim1                   0x2000'ee2c    0x40  Data  Gb  stm32f7xx_hal_timebase_tim.o [1]
+http_client_close        0x801'35d5    0x16  Code  Gb  utils_httpc.o [1]
+http_client_common       0x801'3509    0x6c  Code  Gb  utils_httpc.o [1]
+http_client_common::__func__
+                         0x801'6c8c    0x14  Data  Lc  utils_httpc.o [1]
+http_client_connect      0x801'343f    0xca  Code  Gb  utils_httpc.o [1]
+http_client_connect::__func__
+                         0x801'6c78    0x14  Data  Lc  utils_httpc.o [1]
+http_client_recv_data    0x801'3575    0x60  Code  Gb  utils_httpc.o [1]
+http_client_recv_data::__func__
+                         0x801'6598    0x18  Data  Lc  utils_httpc.o [1]
+huart2                  0x2000'eb0c    0x80  Data  Gb  main.o [1]
+huart3                  0x2000'eb8c    0x80  Data  Gb  main.o [1]
+huart6                  0x2000'ec0c    0x80  Data  Gb  main.o [1]
+init_timer               0x800'2867     0xc  Code  Gb  utils_timer.o [1]
+iot_md5_padding          0x801'3e1c    0x40  Data  Lc  utils_md5.o [1]
+isalpha                  0x800'a2af    0x14  Code  Gb  isalpha.o [2]
+isspace                  0x800'a039    0x14  Code  Gb  isspace.o [2]
+json_get_next_object     0x800'7efd   0x270  Code  Gb  json_parser.o [1]
+json_get_object          0x800'7ec5    0x38  Code  Gb  json_parser.o [1]
+json_get_value_by_name   0x800'8277    0x62  Code  Gb  json_parser.o [1]
+json_get_value_by_name_cb
+                         0x800'8239    0x3e  Code  Gb  json_parser.o [1]
+json_parse_name_value    0x800'816d    0xcc  Code  Gb  json_parser.o [1]
+last_cmd_len            0x2000'ef88     0x4  Data  Lc  at_utils.o [1]
+last_tcp_link           0x2000'ef84     0x4  Data  Gb  at_client.o [1]
+ldexp                    0x800'96ed          Code  Gb  ldexp.o [3]
+ldexpl                   0x800'96ed          Code  Gb  ldexp.o [3]
+left_ms                  0x800'285b     0xc  Code  Gb  utils_timer.o [1]
+list_find                0x800'176f    0x64  Code  Gb  utils_list.o [1]
+list_iterator_destroy    0x800'1879     0xe  Code  Gb  utils_list.o [1]
+list_iterator_new        0x800'1823    0x20  Code  Gb  utils_list.o [1]
+list_iterator_new_from_node
+                         0x800'1843    0x1e  Code  Gb  utils_list.o [1]
+list_iterator_next       0x800'1861    0x18  Code  Gb  utils_list.o [1]
+list_new                 0x800'170d    0x2a  Code  Gb  utils_list.o [1]
+list_node_new            0x800'1887    0x22  Code  Gb  utils_list.o [1]
+list_remove              0x800'17d3    0x50  Code  Gb  utils_list.o [1]
+list_rpush               0x800'1737    0x38  Code  Gb  utils_list.o [1]
+localeconv               0x800'92fb     0x4  Code  Gb  xlocale_c.o [2]
+main                     0x800'dc29    0x5a  Code  Gb  main.o [1]
+makeFreeRtosPriority     0x801'08dd    0x16  Code  Lc  cmsis_os.o [1]
+memchr                   0x800'9349          Code  Gb  memchr.o [4]
+memcmp                   0x800'c551          Code  Gb  memcmp.o [4]
+module_init              0x800'b751    0xa0  Code  Gb  at_inf.o [1]
+module_init::__func__    0x801'7224     0xc  Data  Lc  at_inf.o [1]
+mqtt_init_packet_header
+                         0x800'5589    0xce  Code  Gb  mqtt_client_common.o [1]
+mqtt_read_char           0x800'5501    0x10  Code  Gb  mqtt_client_common.o [1]
+mqtt_read_packet_rem_len_form_buf
+                         0x800'54c1    0x1c  Code  Gb  mqtt_client_common.o [1]
+mqtt_read_uint16_t       0x800'54dd    0x24  Code  Gb  mqtt_client_common.o [1]
+mqtt_write_char          0x800'5511     0xc  Code  Gb  mqtt_client_common.o [1]
+mqtt_write_packet_rem_len
+                         0x800'53fd    0x1c  Code  Gb  mqtt_client_common.o [1]
+mqtt_write_uint_16       0x800'551d    0x36  Code  Gb  mqtt_client_common.o [1]
+mqtt_write_utf8_string   0x800'5553    0x36  Code  Gb  mqtt_client_common.o [1]
+ndigs                    0x801'39b4    0x28  Data  Lc  iar_Stoulx.o [2]
+ndigs                    0x801'3a04    0x28  Data  Lc  iar_Stoullx.o [2]
+obuf                    0x2000'ed5c    0x50  Data  Lc  xfiles.o [2]
+ofc_connect              0x801'158f    0x44  Code  Gb  ota_fetch.o [1]
+ofc_connect::__func__    0x801'7320     0xc  Data  Lc  ota_fetch.o [1]
+ofc_deinit               0x801'16a7    0x32  Code  Gb  ota_fetch.o [1]
+ofc_deinit::__func__     0x801'7338     0xc  Data  Lc  ota_fetch.o [1]
+ofc_fetch                0x801'15d3    0xd4  Code  Gb  ota_fetch.o [1]
+ofc_fetch::__func__      0x801'732c     0xc  Data  Lc  ota_fetch.o [1]
+ofc_init                 0x801'1521    0x6e  Code  Gb  ota_fetch.o [1]
+ofc_init::__func__       0x801'7314     0xc  Data  Lc  ota_fetch.o [1]
+on_message_callback      0x800'd2cd    0x20  Code  Lc  main.o [1]
+osDelay                  0x801'092b    0x1c  Code  Gb  cmsis_os.o [1]
+osKernelStart            0x801'08f3     0xa  Code  Gb  cmsis_os.o [1]
+osThreadCreate           0x801'08fd    0x2e  Code  Gb  cmsis_os.o [1]
+osc_deinit               0x801'19a3    0x2a  Code  Gb  ota_mqtt.o [1]
+osc_deinit::__func__     0x801'738c     0xc  Data  Lc  ota_mqtt.o [1]
+osc_init                 0x801'18bd    0xe6  Code  Gb  ota_mqtt.o [1]
+osc_init::__func__       0x801'7374     0xc  Data  Lc  ota_mqtt.o [1]
+osc_report_progress      0x801'19d1    0x14  Code  Gb  ota_mqtt.o [1]
+osc_upstream_publish     0x801'19e5    0x14  Code  Gb  ota_mqtt.o [1]
+ota_lib_gen_upstream_msg
+                         0x801'1385   0x12a  Code  Gb  ota_lib.o [1]
+ota_lib_gen_upstream_msg::__func__
+                         0x801'5c48    0x1c  Data  Lc  ota_lib.o [1]
+ota_lib_get_msg_type     0x801'11a3    0x5a  Code  Gb  ota_lib.o [1]
+ota_lib_get_msg_type::__func__
+                         0x801'62e0    0x18  Data  Lc  ota_lib.o [1]
+ota_lib_get_params       0x801'11fd   0x182  Code  Gb  ota_lib.o [1]
+ota_lib_get_params::__func__
+                         0x801'6a34    0x14  Data  Lc  ota_lib.o [1]
+ota_lib_md5_deinit       0x801'1193    0x10  Code  Gb  ota_lib.o [1]
+ota_lib_md5_finalize     0x801'1183    0x10  Code  Gb  ota_lib.o [1]
+ota_lib_md5_init         0x801'114d    0x22  Code  Gb  ota_lib.o [1]
+ota_lib_md5_update       0x801'116f    0x14  Code  Gb  ota_lib.o [1]
+pAtUart                 0x2000'0070     0x4  Data  Lc  esp8266.o [1]
+parse_shadow_method_type
+                         0x800'2735    0x20  Code  Gb  shadow_client_json.o [1]
+parse_shadow_payload_retcode_type
+                         0x800'2691    0x80  Code  Gb  shadow_client_json.o [1]
+parse_shadow_payload_retcode_type::__func__
+                         0x801'4e84    0x24  Data  Lc  shadow_client_json.o [1]
+parse_shadow_payload_state_desired_state
+                         0x800'2715    0x20  Code  Gb  shadow_client_json.o [1]
+parse_shadow_state_desired_type
+                         0x800'2759    0x20  Code  Gb  shadow_client_json.o [1]
+parse_version_num        0x800'2611    0x80  Code  Gb  shadow_client_json.o [1]
+parse_version_num::__func__
+                         0x801'6b4c    0x14  Data  Lc  shadow_client_json.o [1]
+pows                     0x801'3c08    0x48  Data  Lc  strto64.o [3]
+printf                   0x800'3261    0x28  Code  Gb  printf.o [2]
+property_post_cb         0x800'd26f     0x6  Code  Gb  main.o [1]
+property_set_cb          0x800'd29b     0x6  Code  Gb  main.o [1]
+prvAddCurrentTaskToDelayedList
+                         0x800'3de1    0x82  Code  Lc  tasks.o [1]
+prvAddNewTaskToReadyList
+                         0x800'34af    0x9a  Code  Lc  tasks.o [1]
+prvCheckTasksWaitingTermination
+                         0x800'3a8d    0x3e  Code  Lc  tasks.o [1]
+prvCopyDataToQueue       0x800'2e67    0x9c  Code  Lc  queue.o [1]
+prvDeleteTCB             0x800'3acb    0x12  Code  Lc  tasks.o [1]
+prvGetDisinheritPriorityAfterTimeout
+                         0x800'2e51    0x16  Code  Lc  queue.o [1]
+prvHeapInit              0x800'3181    0x62  Code  Lc  heap_4.o [1]
+prvIdleTask              0x800'3a11    0x24  Code  Lc  tasks.o [1]
+prvInitialiseMutex       0x800'2a75    0x22  Code  Lc  queue.o [1]
+prvInitialiseNewQueue    0x800'2a43    0x32  Code  Lc  queue.o [1]
+prvInitialiseNewTask     0x800'33e5    0xca  Code  Lc  tasks.o [1]
+prvInitialiseTaskLists   0x800'3a35    0x54  Code  Lc  tasks.o [1]
+prvInsertBlockIntoFreeList
+                         0x800'31e3    0x5e  Code  Lc  heap_4.o [1]
+prvIsQueueEmpty          0x800'2f71    0x1c  Code  Lc  queue.o [1]
+prvIsQueueFull           0x800'2f8d    0x1e  Code  Lc  queue.o [1]
+prvResetNextTaskUnblockTime
+                         0x800'3add    0x2a  Code  Lc  tasks.o [1]
+prvTaskExitError         0x800'6acd    0x32  Code  Lc  port.o [1]
+prvUnlockQueue           0x800'2f03    0x6e  Code  Lc  queue.o [1]
+push_sub_info_to         0x800'660b   0x134  Code  Gb  mqtt_client_common.o [1]
+push_sub_info_to::__func__
+                         0x801'68f4    0x14  Data  Lc  mqtt_client_common.o [1]
+put_json_node            0x800'23b1   0x260  Code  Gb  shadow_client_json.o [1]
+put_json_node::__func__
+                         0x801'70b4    0x10  Data  Lc  shadow_client_json.o [1]
+putchar                  0x801'65c9     0xc  Code  Gb  putchar.o [2]
+pvPortMalloc             0x800'2fd9   0x12c  Code  Gb  heap_4.o [1]
+pvTaskIncrementMutexHeldCount
+                         0x800'3d9f    0x16  Code  Gb  tasks.o [1]
+pxCurrentTCB            0x2000'efb0     0x4  Data  Gb  tasks.o [1]
+pxDelayedTaskList       0x2000'efb4     0x4  Data  Lc  tasks.o [1]
+pxEnd                   0x2000'ef8c     0x4  Data  Lc  heap_4.o [1]
+pxOverflowDelayedTaskList
+                        0x2000'efb8     0x4  Data  Lc  tasks.o [1]
+pxPortInitialiseStack    0x800'6aa5    0x28  Code  Gb  port.o [1]
+pxReadyTasksLists       0x2000'ea80    0x8c  Data  Lc  tasks.o [1]
+ranmatch                 0x800'8661    0x44  Code  Lc  xscanffull.o [2]
+recvBuff_test           0x2000'c278  0x1800  Data  Gb  at_client.o [1]
+request_common_add_delta_property
+                         0x800'1b71    0x88  Code  Gb  shadow_client_common.o [1]
+request_common_add_delta_property::__func__
+                         0x801'4e60    0x24  Data  Lc  shadow_client_common.o [1]
+ringBuff                0x2000'7a78  0x1800  Data  Gb  at_client.o [1]
+ringTcp0Buff            0x2000'9278  0x1800  Data  Gb  at_client.o [1]
+ringTcp1Buff            0x2000'aa78  0x1800  Data  Gb  at_client.o [1]
+ring_buff_flush          0x800'a351    0x24  Code  Gb  at_ringbuff.o [1]
+ring_buff_init           0x800'a31d    0x34  Code  Gb  at_ringbuff.o [1]
+ring_buff_pop_data       0x800'a3d1    0x44  Code  Gb  at_ringbuff.o [1]
+ring_buff_push_data      0x800'a375    0x5c  Code  Gb  at_ringbuff.o [1]
+s_uiot_host             0x2000'edac    0x40  Data  Lc  mqtt_client.o [1]
+s_uiot_port             0x2000'00e8     0x4  Data  Lc  mqtt_client.o [1]
+scalbln                  0x800'96ed          Code  Gb  ldexp.o [3]
+scalblnl                 0x800'96ed          Code  Gb  ldexp.o [3]
+scalbn                   0x800'96ed          Code  Gb  ldexp.o [3]
+scalbnl                  0x800'96ed          Code  Gb  ldexp.o [3]
+scale                    0x800'74fb    0x46  Code  Lc  xprintffull.o [2]
+sec_hand                0x2000'efec     0x4  Data  Lc  xfail_s.o [2]
+send_buf                0x2000'e680   0x400  Data  Lc  at_utils.o [1]
+send_mqtt_packet         0x800'58f5    0x78  Code  Gb  mqtt_client_common.o [1]
+send_upstream_msg_with_version
+                         0x801'000d   0x134  Code  Lc  ota_client.o [1]
+send_upstream_msg_with_version::__func__
+                         0x801'54d8    0x20  Data  Lc  ota_client.o [1]
+serialize_packet_with_zero_payload
+                         0x800'5881    0x74  Code  Gb  mqtt_client_common.o [1]
+serialize_pub_ack_packet
+                         0x800'4cf9    0x98  Code  Gb  mqtt_client_publish.o [1]
+set_client_conn_state    0x800'65d3    0x1a  Code  Gb  mqtt_client_common.o [1]
+sg_at_client            0x2000'eea8    0x34  Data  Lc  at_client.o [1]
+sg_count                0x2000'efa0     0x4  Data  Lc  main.o [1]
+shadow_add_request_to_list
+                         0x800'1469   0x10c  Code  Lc  shadow_client_manager.o [1]
+shadow_add_request_to_list::__func__
+                         0x801'5e78    0x1c  Data  Lc  shadow_client_manager.o [1]
+shadow_common_check_property_existence
+                         0x800'19d7    0x4c  Code  Gb  shadow_client_common.o [1]
+shadow_common_check_property_existence::__func__
+                         0x801'4894    0x28  Data  Lc  shadow_client_common.o [1]
+shadow_common_check_property_match
+                         0x800'195b    0x7c  Code  Gb  shadow_client_common.o [1]
+shadow_common_check_property_match::__func__
+                         0x801'4e3c    0x24  Data  Lc  shadow_client_common.o [1]
+shadow_common_register_property_on_delta
+                         0x800'1af9    0x78  Code  Gb  shadow_client_common.o [1]
+shadow_common_register_property_on_delta::__func__
+                         0x801'4498    0x2c  Data  Lc  shadow_client_common.o [1]
+shadow_common_update_property
+                         0x800'1a23    0xd2  Code  Gb  shadow_client_common.o [1]
+shadow_common_update_property::__func__
+                         0x801'5658    0x20  Data  Lc  shadow_client_common.o [1]
+shadow_json_finalize     0x800'1351   0x108  Code  Lc  shadow_client_manager.o [1]
+shadow_json_finalize::__func__
+                         0x801'64f0    0x18  Data  Lc  shadow_client_manager.o [1]
+shadow_json_init         0x800'1055   0x154  Code  Lc  shadow_client_manager.o [1]
+shadow_json_init::__func__
+                         0x801'6bc4    0x14  Data  Lc  shadow_client_manager.o [1]
+shadow_json_set_content
+                         0x800'11b9   0x18c  Code  Lc  shadow_client_manager.o [1]
+shadow_json_set_content::__func__
+                         0x801'64d8    0x18  Data  Lc  shadow_client_manager.o [1]
+sscanf                   0x800'69f1    0x28  Code  Gb  sscanf.o [2]
+strchr                   0x800'7e3d          Code  Gb  strchr.o [4]
+strcmp                   0x800'281d          Code  Gb  strcmp.o [4]
+strcpy                   0x800'7c7d          Code  Gb  strcpy.o [4]
+strlen                   0x800'22f9          Code  Gb  strlen.o [4]
+strncmp                  0x800'6a19    0x28  Code  Gb  strncmp.o [2]
+strncpy                  0x800'7e55          Code  Gb  strncpy.o [4]
+strstr                   0x800'b68d    0x30  Code  Gb  strstr.o [2]
+strtoll                  0x800'a0e5     0x2  Code  Gb  iar_Stollx.o [2]
+strtoull                 0x800'a299     0x2  Code  Gb  iar_Stoullx.o [2]
+tolower                  0x800'b7f1    0x14  Code  Gb  tolower.o [2]
+topic_request_result_handler
+                         0x800'0c55   0x236  Code  Gb  shadow_client_manager.o [1]
+topic_request_result_handler::__func__
+                         0x801'56b8    0x20  Data  Lc  shadow_client_manager.o [1]
+topic_sync_handler       0x800'0ea5   0x192  Code  Gb  shadow_client_manager.o [1]
+topic_sync_handler::__func__
+                         0x801'6b9c    0x14  Data  Lc  shadow_client_manager.o [1]
+ttio_guard              0x2000'eff2     0x1  Data  Lc  XShttio.o [2]
+ucHeap                  0x2000'0278  0x7800  Data  Lc  heap_4.o [1]
+ucMaxSysCallPriority    0x2000'eff0     0x1  Data  Lc  port.o [1]
+uiot_mqtt_attempt_reconnect
+                         0x800'42c7    0x4e  Code  Gb  mqtt_client_connect.o [1]
+uiot_mqtt_connect        0x800'427f    0x48  Code  Gb  mqtt_client_connect.o [1]
+uiot_mqtt_disconnect     0x800'4315    0x9c  Code  Gb  mqtt_client_connect.o [1]
+uiot_mqtt_init           0x800'2001   0x258  Code  Gb  mqtt_client.o [1]
+uiot_mqtt_init::__func__
+                         0x801'6ef4    0x10  Data  Lc  mqtt_client.o [1]
+uiot_mqtt_network_init   0x800'6795    0x28  Code  Gb  mqtt_client_net.o [1]
+uiot_mqtt_pub_info_proc
+                         0x800'4771   0x106  Code  Gb  mqtt_client_yield.o [1]
+uiot_mqtt_pub_info_proc::__func__
+                         0x801'61f0    0x18  Data  Lc  mqtt_client_yield.o [1]
+uiot_mqtt_publish        0x800'4e65   0x174  Code  Gb  mqtt_client_publish.o [1]
+uiot_mqtt_publish::__func__
+                         0x801'691c    0x14  Data  Lc  mqtt_client_publish.o [1]
+uiot_mqtt_resubscribe    0x800'52bf    0x9c  Code  Gb  mqtt_client_subscribe.o [1]
+uiot_mqtt_resubscribe::__func__
+                         0x801'61d8    0x18  Data  Lc  mqtt_client_subscribe.o [1]
+uiot_mqtt_sub_info_proc
+                         0x800'4877   0x13a  Code  Gb  mqtt_client_yield.o [1]
+uiot_mqtt_sub_info_proc::__func__
+                         0x801'6208    0x18  Data  Lc  mqtt_client_yield.o [1]
+uiot_mqtt_subscribe      0x800'50f5   0x1ca  Code  Gb  mqtt_client_subscribe.o [1]
+uiot_mqtt_subscribe::__func__
+                         0x801'6930    0x14  Data  Lc  mqtt_client_subscribe.o [1]
+uiot_mqtt_yield          0x800'4637   0x134  Code  Gb  mqtt_client_yield.o [1]
+uiot_mqtt_yield::__func__
+                         0x801'6f74    0x10  Data  Lc  mqtt_client_yield.o [1]
+uiot_register_for_COMMAND
+                         0x800'f9d5    0x14  Code  Gb  dm_mqtt.o [1]
+uiot_register_for_EVENT_POST
+                         0x800'f9c1    0x14  Code  Gb  dm_mqtt.o [1]
+uiot_register_for_PROPERTY_POST
+                         0x800'f999    0x14  Code  Gb  dm_mqtt.o [1]
+uiot_register_for_PROPERTY_SET
+                         0x800'f9ad    0x14  Code  Gb  dm_mqtt.o [1]
+uiot_shadow_init         0x800'01f9   0x106  Code  Gb  shadow_client_manager.o [1]
+uiot_shadow_init::__func__
+                         0x801'6b60    0x14  Data  Lc  shadow_client_manager.o [1]
+uiot_shadow_make_request
+                         0x800'0499    0xc4  Code  Gb  shadow_client_manager.o [1]
+uiot_shadow_make_request::__func__
+                         0x801'5d28    0x1c  Data  Lc  shadow_client_manager.o [1]
+uiot_shadow_publish_operation_to_cloud
+                         0x800'0677    0xfa  Code  Lc  shadow_client_manager.o [1]
+uiot_shadow_publish_operation_to_cloud::__func__
+                         0x801'4934    0x28  Data  Lc  shadow_client_manager.o [1]
+uiot_shadow_request_destory
+                         0x800'080d    0x4e  Code  Lc  shadow_client_manager.o [1]
+uiot_shadow_request_destory::__func__
+                         0x801'5dd0    0x1c  Data  Lc  shadow_client_manager.o [1]
+uiot_shadow_request_init
+                         0x800'0775    0x98  Code  Gb  shadow_client_manager.o [1]
+uiot_shadow_request_init::__func__
+                         0x801'5d98    0x1c  Data  Lc  shadow_client_manager.o [1]
+uiot_shadow_subscribe_topic
+                         0x800'055d   0x11a  Code  Gb  shadow_client_manager.o [1]
+uiot_shadow_subscribe_topic::__func__
+                         0x801'5d44    0x1c  Data  Lc  shadow_client_manager.o [1]
+uiot_shadow_update_property
+                         0x800'02ff   0x194  Code  Gb  shadow_client_manager.o [1]
+uiot_shadow_update_property::__func__
+                         0x801'5cf0    0x1c  Data  Lc  shadow_client_manager.o [1]
+ulMaxPRIGROUPValue      0x2000'efa8     0x4  Data  Lc  port.o [1]
+urc_close_recv_judge     0x800'9b23    0x1e  Code  Lc  esp8266.o [1]
+urc_common_recv_func     0x800'9aed     0x6  Code  Lc  esp8266.o [1]
+urc_cwjap_recv_judge     0x800'9a8d    0x1e  Code  Lc  esp8266.o [1]
+urc_recvdata_recv_func   0x800'9b65    0xc2  Code  Lc  esp8266.o [1]
+urc_recvdata_recv_judge
+                         0x800'9b41    0x20  Code  Lc  esp8266.o [1]
+urc_recvlen_recv_func    0x800'9c45    0x7a  Code  Lc  esp8266.o [1]
+urc_recvlen_recv_judge   0x800'9c27    0x1e  Code  Lc  esp8266.o [1]
+urc_rst_recv_judge       0x800'9a6f    0x1e  Code  Lc  esp8266.o [1]
+urc_send_recv_judge      0x800'9aab    0x42  Code  Lc  esp8266.o [1]
+urc_tcp_start_judge      0x800'9af3    0x30  Code  Lc  esp8266.o [1]
+utils_hb2hex             0x801'2a7d    0x16  Code  Gb  utils_md5.o [1]
+utils_md5_finish         0x801'289d    0xcc  Code  Gb  utils_md5.o [1]
+utils_md5_finish_hb2hex
+                         0x801'2a93    0x40  Code  Gb  utils_md5.o [1]
+utils_md5_init           0x801'1e21    0x16  Code  Gb  utils_md5.o [1]
+utils_md5_process        0x801'1e59   0x9b4  Code  Gb  utils_md5.o [1]
+utils_md5_starts         0x801'1e37    0x22  Code  Gb  utils_md5.o [1]
+utils_md5_update         0x801'280d    0x90  Code  Gb  utils_md5.o [1]
+utils_net_connect        0x800'7dab     0xe  Code  Gb  utils_net.o [1]
+utils_net_disconnect     0x800'7d9d     0xe  Code  Gb  utils_net.o [1]
+utils_net_init           0x800'7db9    0x4e  Code  Gb  utils_net.o [1]
+utils_net_init::__func__
+                         0x801'7204    0x10  Data  Lc  utils_net.o [1]
+utils_net_read           0x800'7d5d    0x20  Code  Gb  utils_net.o [1]
+utils_net_write          0x800'7d7d    0x20  Code  Gb  utils_net.o [1]
+uwTick                  0x2000'efac     0x4  Data  Gb  stm32f7xx_hal.o [1]
+uwTickFreq              0x2000'0274     0x1  Data  Gb  stm32f7xx_hal.o [1]
+uxCriticalNesting       0x2000'00ec     0x4  Data  Lc  port.o [1]
+uxCurrentNumberOfTasks  0x2000'efc0     0x4  Data  Lc  tasks.o [1]
+uxDeletedTasksWaitingCleanUp
+                        0x2000'efbc     0x4  Data  Lc  tasks.o [1]
+uxListRemove             0x800'6cfb    0x28  Code  Gb  list.o [1]
+uxPendedTicks           0x2000'efd0     0x4  Data  Lc  tasks.o [1]
+uxSchedulerSuspended    0x2000'efe8     0x4  Data  Lc  tasks.o [1]
+uxTaskNumber            0x2000'efdc     0x4  Data  Lc  tasks.o [1]
+uxTopReadyPriority      0x2000'efc8     0x4  Data  Lc  tasks.o [1]
+vListInitialise          0x800'6c89    0x1e  Code  Gb  list.o [1]
+vListInitialiseItem      0x800'6ca7     0x6  Code  Gb  list.o [1]
+vListInsert              0x800'6cc5    0x36  Code  Gb  list.o [1]
+vListInsertEnd           0x800'6cad    0x18  Code  Gb  list.o [1]
+vPortEnableVFP           0x800'91e9          Code  Gb  portasm.o [1]
+vPortEnterCritical       0x800'6b9f    0x3c  Code  Gb  port.o [1]
+vPortExitCritical        0x800'6bdb    0x30  Code  Gb  port.o [1]
+vPortFree                0x800'3105    0x7c  Code  Gb  heap_4.o [1]
+vPortStartFirstTask      0x800'91c9          Code  Gb  portasm.o [1]
+vQueueDelete             0x800'2e25    0x2c  Code  Gb  queue.o [1]
+vQueueUnregisterQueue    0x800'2fab    0x28  Code  Gb  queue.o [1]
+vTaskDelay               0x800'3549    0x52  Code  Gb  tasks.o [1]
+vTaskInternalSetTimeOutState
+                         0x800'3945    0x12  Code  Gb  tasks.o [1]
+vTaskMissedYield         0x800'3a07     0xa  Code  Gb  tasks.o [1]
+vTaskPlaceOnEventList    0x800'388d    0x38  Code  Gb  tasks.o [1]
+vTaskPriorityDisinheritAfterTimeout
+                         0x800'3ca9    0xf6  Code  Gb  tasks.o [1]
+vTaskStartScheduler      0x800'359b    0x70  Code  Gb  tasks.o [1]
+vTaskSuspendAll          0x800'360b     0xc  Code  Gb  tasks.o [1]
+vTaskSwitchContext       0x800'381b    0x72  Code  Gb  tasks.o [1]
+vsnprintf                0x800'3335    0x3c  Code  Gb  vsnprint.o [2]
+wait_for_read            0x800'6575    0x5e  Code  Gb  mqtt_client_common.o [1]
+wctob                    0x800'9ffd    0x32  Code  Gb  wctob.o [2]
+xBlockAllocatedBit      0x2000'ef98     0x4  Data  Lc  heap_4.o [1]
+xDelayedTaskList1       0x2000'ef18    0x14  Data  Lc  tasks.o [1]
+xDelayedTaskList2       0x2000'ef2c    0x14  Data  Lc  tasks.o [1]
+xFreeBytesRemaining     0x2000'ef90     0x4  Data  Lc  heap_4.o [1]
+xHeapStructSize          0x801'7594     0x4  Data  Lc  heap_4.o [1]
+xIdleTaskHandle         0x2000'efe4     0x4  Data  Lc  tasks.o [1]
+xMinimumEverFreeBytesRemaining
+                        0x2000'ef94     0x4  Data  Lc  heap_4.o [1]
+xNextTaskUnblockTime    0x2000'efe0     0x4  Data  Lc  tasks.o [1]
+xNumOfOverflows         0x2000'efd8     0x4  Data  Lc  tasks.o [1]
+xPendingReadyList       0x2000'ef40    0x14  Data  Lc  tasks.o [1]
+xPortStartScheduler      0x800'6aff    0xa0  Code  Gb  port.o [1]
+xQueueCreateMutex        0x800'2a97    0x20  Code  Gb  queue.o [1]
+xQueueGenericCreate      0x800'29e9    0x5a  Code  Gb  queue.o [1]
+xQueueGenericReset       0x800'2951    0x98  Code  Gb  queue.o [1]
+xQueueGenericSend        0x800'2ab7   0x1b6  Code  Gb  queue.o [1]
+xQueueRegistry          0x2000'edec    0x40  Data  Gb  queue.o [1]
+xQueueSemaphoreTake      0x800'2c6d   0x1b2  Code  Gb  queue.o [1]
+xSchedulerRunning       0x2000'efcc     0x4  Data  Lc  tasks.o [1]
+xStart                  0x2000'ef7c     0x8  Data  Lc  heap_4.o [1]
+xSuspendedTaskList      0x2000'ef68    0x14  Data  Lc  tasks.o [1]
+xTaskCheckForTimeOut     0x800'3971    0x96  Code  Gb  tasks.o [1]
+xTaskCreate              0x800'3371    0x74  Code  Gb  tasks.o [1]
+xTaskGetSchedulerState   0x800'3b07    0x20  Code  Gb  tasks.o [1]
+xTaskGetTickCount        0x800'3703     0x8  Code  Gb  tasks.o [1]
+xTaskIncrementTick       0x800'370b   0x110  Code  Gb  tasks.o [1]
+xTaskPriorityDisinherit
+                         0x800'3be7    0xba  Code  Gb  tasks.o [1]
+xTaskPriorityInherit     0x800'3b2d    0xba  Code  Gb  tasks.o [1]
+xTaskRemoveFromEventList
+                         0x800'38c5    0x80  Code  Gb  tasks.o [1]
+xTaskResumeAll           0x800'3617    0xec  Code  Gb  tasks.o [1]
+xTasksWaitingTermination
+                        0x2000'ef54    0x14  Data  Lc  tasks.o [1]
+xTickCount              0x2000'efc4     0x4  Data  Lc  tasks.o [1]
+xYieldPending           0x2000'efd4     0x4  Data  Lc  tasks.o [1]
+
+
+[1] = D:\stm767\stm767\EWARM\stm767\Obj
+[2] = dl7M_tlf.a
+[3] = m7M_tlv.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  80 778 bytes of readonly  code memory
+  15 619 bytes of readonly  data memory
+  62 448 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
